@@ -45,15 +45,25 @@ class PersistenceTest < ActiveRecord::TestCase
 
   def test_fills_auto_populated_columns_on_creation
     record_with_defaults = Default.create
+
     assert_not_nil record_with_defaults.id
-    assert_equal "Ruby on Rails", record_with_defaults.ruby_on_rails
-    assert_not_nil record_with_defaults.virtual_stored_number
     assert_not_nil record_with_defaults.rand_number
+    assert_equal record_with_defaults.rand_number + 1, record_with_defaults.rand_number_plus_one
+    assert_equal record_with_defaults.rand_number + 2, record_with_defaults.rand_number_plus_two
+    assert_equal "Ruby on Rails", record_with_defaults.ruby_on_rails
     assert_not_nil record_with_defaults.modified_date
     assert_not_nil record_with_defaults.modified_date_function
     assert_not_nil record_with_defaults.modified_time
     assert_not_nil record_with_defaults.modified_time_without_precision
     assert_not_nil record_with_defaults.modified_time_function
+  end if current_adapter?(:PostgreSQLAdapter)
+
+  def test_refreshes_assigned_returning_attributes_on_creation
+    # Writing to rand_number_plus_one is essentially a no-op but the API does allow it.
+    record_with_defaults = Default.create(rand_number_plus_one: -1, rand_number_plus_two: -1)
+
+    assert_equal record_with_defaults.rand_number + 1, record_with_defaults.rand_number_plus_one
+    assert_equal record_with_defaults.rand_number + 2, record_with_defaults.rand_number_plus_two
   end if current_adapter?(:PostgreSQLAdapter)
 
   def test_update_many

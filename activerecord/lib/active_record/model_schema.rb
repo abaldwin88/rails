@@ -423,7 +423,11 @@ module ActiveRecord
       end
 
       def _returning_columns_for_insert # :nodoc:
-        @_returning_columns_for_insert ||= columns.filter_map do |c|
+        _default_returning_columns_for_insert | _returning_on_create
+      end
+
+      def _default_returning_columns_for_insert # :nodoc:
+        @_default_returning_columns_for_insert ||= columns.filter_map do |c|
           c.name if connection.return_value_after_insert?(c)
         end
       end
