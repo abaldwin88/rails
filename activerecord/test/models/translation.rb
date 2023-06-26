@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Translation < ActiveRecord::Base
+require 'models/application_record'
+class Translation < ApplicationRecord
   belongs_to :attachment, optional: true
 
   validates :locale, presence: true

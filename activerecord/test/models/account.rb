@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Account < ActiveRecord::Base
+require 'models/application_record'
+class Account < ApplicationRecord
   belongs_to :firm, class_name: "Company"
   belongs_to :unautosaved_firm, foreign_key: "firm_id", class_name: "Firm", autosave: false
 

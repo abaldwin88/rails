@@ -1,16 +1,19 @@
 # frozen_string_literal: true
 
-class DrinkDesigner < ActiveRecord::Base
+require 'models/application_record'
+class DrinkDesigner < ApplicationRecord
   has_one :chef, as: :employable
 end
 
-class DrinkDesignerWithPolymorphicDependentNullifyChef < ActiveRecord::Base
+require 'models/application_record'
+class DrinkDesignerWithPolymorphicDependentNullifyChef < ApplicationRecord
   self.table_name = "drink_designers"
 
   has_one :chef, as: :employable, dependent: :nullify
 end
 
-class DrinkDesignerWithPolymorphicTouchChef < ActiveRecord::Base
+require 'models/application_record'
+class DrinkDesignerWithPolymorphicTouchChef < ApplicationRecord
   self.table_name = "drink_designers"
 
   has_one :chef, as: :employable, touch: true

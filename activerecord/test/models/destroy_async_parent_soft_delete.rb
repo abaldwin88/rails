@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class DestroyAsyncParentSoftDelete < ActiveRecord::Base
+require 'models/application_record'
+class DestroyAsyncParentSoftDelete < ApplicationRecord
   has_many :taggings, as: :taggable, class_name: "Tagging"
   has_many :tags, through: :taggings,
     dependent: :destroy_async,

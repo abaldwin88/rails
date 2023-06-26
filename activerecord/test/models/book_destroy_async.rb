@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class BookDestroyAsync < ActiveRecord::Base
+require 'models/application_record'
+class BookDestroyAsync < ApplicationRecord
   self.table_name = "books"
 
   has_many :taggings, as: :taggable, class_name: "Tagging"
@@ -16,7 +17,8 @@ class BookDestroyAsync < ActiveRecord::Base
   end
 end
 
-class BookDestroyAsyncWithScopedTags < ActiveRecord::Base
+require 'models/application_record'
+class BookDestroyAsyncWithScopedTags < ApplicationRecord
   self.table_name = "books"
 
   has_many :taggings, as: :taggable, class_name: "Tagging"

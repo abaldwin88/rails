@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class DlKeyedHasMany < ActiveRecord::Base
+require 'models/application_record'
+class DlKeyedHasMany < ApplicationRecord
   self.primary_key = "many_key"
 end

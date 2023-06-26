@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Category < ActiveRecord::Base
+require 'models/application_record'
+class Category < ApplicationRecord
   has_and_belongs_to_many :posts
   has_and_belongs_to_many :special_posts, class_name: "Post"
   has_and_belongs_to_many :other_posts, class_name: "Post"

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Vegetable < ActiveRecord::Base
+require 'models/application_record'
+class Vegetable < ApplicationRecord
   validates_presence_of :name
 
   def self.inheritance_column

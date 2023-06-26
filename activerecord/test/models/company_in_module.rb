@@ -4,7 +4,8 @@ require "active_support/core_ext/object/with_options"
 
 module MyApplication
   module Business
-    class Company < ActiveRecord::Base
+require 'models/application_record'
+    class Company < ApplicationRecord
     end
 
     class Firm < Company
@@ -19,15 +20,18 @@ module MyApplication
       belongs_to :firm, foreign_key: "client_of"
       belongs_to :firm_with_other_name, class_name: "Firm", foreign_key: "client_of"
 
-      class Contact < ActiveRecord::Base; end
+require 'models/application_record'
+      class Contact < ApplicationRecord; end
     end
 
-    class Developer < ActiveRecord::Base
+require 'models/application_record'
+    class Developer < ApplicationRecord
       has_and_belongs_to_many :projects
       validates_length_of :name, within: (3..20)
     end
 
-    class Project < ActiveRecord::Base
+require 'models/application_record'
+    class Project < ApplicationRecord
       has_and_belongs_to_many :developers
     end
 
@@ -36,7 +40,8 @@ module MyApplication
         "prefixed_"
       end
 
-      class Company < ActiveRecord::Base
+require 'models/application_record'
+      class Company < ApplicationRecord
       end
 
       class Firm < Company
@@ -44,7 +49,8 @@ module MyApplication
       end
 
       module Nested
-        class Company < ActiveRecord::Base
+require 'models/application_record'
+        class Company < ApplicationRecord
         end
       end
     end
@@ -54,7 +60,8 @@ module MyApplication
         "_suffixed"
       end
 
-      class Company < ActiveRecord::Base
+require 'models/application_record'
+      class Company < ApplicationRecord
       end
 
       class Firm < Company
@@ -62,24 +69,28 @@ module MyApplication
       end
 
       module Nested
-        class Company < ActiveRecord::Base
+require 'models/application_record'
+        class Company < ApplicationRecord
         end
       end
     end
   end
 
   module Billing
-    class Firm < ActiveRecord::Base
+require 'models/application_record'
+    class Firm < ApplicationRecord
       self.table_name = "companies"
     end
 
     module Nested
-      class Firm < ActiveRecord::Base
+require 'models/application_record'
+      class Firm < ApplicationRecord
         self.table_name = "companies"
       end
     end
 
-    class Account < ActiveRecord::Base
+require 'models/application_record'
+    class Account < ApplicationRecord
       with_options(foreign_key: :firm_id) do |i|
         i.belongs_to :firm, class_name: "MyApplication::Business::Firm"
         i.belongs_to :qualified_billing_firm, class_name: "MyApplication::Billing::Firm"

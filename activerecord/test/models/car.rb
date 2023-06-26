@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Car < ActiveRecord::Base
+require 'models/application_record'
+class Car < ApplicationRecord
   belongs_to :person, counter_cache: true
   has_many :bulbs
   has_many :all_bulbs, -> { unscope(where: :name) }, class_name: "Bulb"

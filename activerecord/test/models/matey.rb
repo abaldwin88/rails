@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Matey < ActiveRecord::Base
+require 'models/application_record'
+class Matey < ApplicationRecord
   belongs_to :pirate
   belongs_to :target, class_name: "Pirate"
 end

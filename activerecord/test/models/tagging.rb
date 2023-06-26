@@ -4,7 +4,8 @@
 module Taggable
 end
 
-class Tagging < ActiveRecord::Base
+require 'models/application_record'
+class Tagging < ApplicationRecord
   belongs_to :tag, -> { includes(:tagging) }
   belongs_to :super_tag,   class_name: "Tag", foreign_key: "super_tag_id"
   belongs_to :invalid_tag, class_name: "Tag", foreign_key: "tag_id"

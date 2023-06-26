@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Branch < ActiveRecord::Base
+require 'models/application_record'
+class Branch < ApplicationRecord
   has_many :branches
   belongs_to :branch, optional: true
 end

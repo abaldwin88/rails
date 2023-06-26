@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Sharded
-  class Tag < ActiveRecord::Base
+require 'models/application_record'
+  class Tag < ApplicationRecord
     self.table_name = :sharded_tags
     query_constraints :blog_id, :id
 

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class AbstractItem < ActiveRecord::Base
+require 'models/application_record'
+class AbstractItem < ApplicationRecord
   self.abstract_class = true
   has_one :tagging, as: :taggable
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Room < ActiveRecord::Base
+require 'models/application_record'
+class Room < ApplicationRecord
   belongs_to :user
   belongs_to :owner, class_name: "User"
 end

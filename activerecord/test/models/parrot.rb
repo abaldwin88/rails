@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Parrot < ActiveRecord::Base
+require 'models/application_record'
+class Parrot < ApplicationRecord
   self.inheritance_column = :parrot_sti_class
 
   has_and_belongs_to_many :pirates

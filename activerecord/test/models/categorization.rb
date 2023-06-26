@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Categorization < ActiveRecord::Base
+require 'models/application_record'
+class Categorization < ApplicationRecord
   belongs_to :post
   belongs_to :category, counter_cache: true
   belongs_to :named_category, class_name: "Category", foreign_key: :named_category_name, primary_key: :name
@@ -12,7 +13,8 @@ class Categorization < ActiveRecord::Base
   has_many   :authors_using_custom_pk, class_name: "Author", foreign_key: :id,        primary_key: :category_id
 end
 
-class SpecialCategorization < ActiveRecord::Base
+require 'models/application_record'
+class SpecialCategorization < ApplicationRecord
   self.table_name = "categorizations"
   default_scope { where(special: true) }
 

@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Sharded
-  class Comment < ActiveRecord::Base
+require 'models/application_record'
+  class Comment < ApplicationRecord
     self.table_name = :sharded_comments
     query_constraints :blog_id, :id
 

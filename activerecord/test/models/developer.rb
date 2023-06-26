@@ -3,7 +3,8 @@
 require "ostruct"
 require "models/computer"
 
-class Developer < ActiveRecord::Base
+require 'models/application_record'
+class Developer < ApplicationRecord
   module TimestampAliases
     extend ActiveSupport::Concern
 
@@ -116,29 +117,34 @@ end
 class SubDeveloper < Developer
 end
 
-class SpecialDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class SpecialDeveloper < ApplicationRecord
   self.table_name = "developers"
   has_many :special_contracts, foreign_key: "developer_id"
 end
 
-class SymbolIgnoredDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class SymbolIgnoredDeveloper < ApplicationRecord
   self.table_name = "developers"
   self.ignored_columns = [:first_name, :last_name]
 
   attribute :last_name
 end
 
-class AuditLog < ActiveRecord::Base
+require 'models/application_record'
+class AuditLog < ApplicationRecord
   belongs_to :developer, validate: true
   belongs_to :unvalidated_developer, class_name: "Developer"
 end
 
-class AuditLogRequired < ActiveRecord::Base
+require 'models/application_record'
+class AuditLogRequired < ApplicationRecord
   self.table_name = "audit_logs"
   belongs_to :developer, required: true
 end
 
-class DeveloperWithBeforeDestroyRaise < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithBeforeDestroyRaise < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, join_table: "developers_projects", foreign_key: "developer_id"
   before_destroy :raise_if_projects_empty!
@@ -148,22 +154,26 @@ class DeveloperWithBeforeDestroyRaise < ActiveRecord::Base
   end
 end
 
-class DeveloperWithSelect < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithSelect < ApplicationRecord
   self.table_name = "developers"
   default_scope { select("name") }
 end
 
-class DeveloperwithDefaultMentorScopeNot < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperwithDefaultMentorScopeNot < ApplicationRecord
   self.table_name = "developers"
   default_scope -> { where(mentor_id: 1) }
 end
 
-class DeveloperWithDefaultMentorScopeAllQueries < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithDefaultMentorScopeAllQueries < ApplicationRecord
   self.table_name = "developers"
   default_scope -> { where(mentor_id: 1) }, all_queries: true
 end
 
-class DeveloperWithDefaultNilableFirmScopeAllQueries < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithDefaultNilableFirmScopeAllQueries < ApplicationRecord
   self.table_name = "developers"
   firm_id = nil # Could be something like Current.firm_id
   default_scope -> { where(firm_id: firm_id) if firm_id }, all_queries: true
@@ -175,20 +185,23 @@ module MentorDefaultScopeNotAllQueries
   included { default_scope { where(mentor_id: 1) } }
 end
 
-class DeveloperWithIncludedMentorDefaultScopeNotAllQueriesAndDefaultScopeFirmWithAllQueries < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithIncludedMentorDefaultScopeNotAllQueriesAndDefaultScopeFirmWithAllQueries < ApplicationRecord
   include MentorDefaultScopeNotAllQueries
   self.table_name = "developers"
   firm_id = 10 # Could be something like Current.firm_id
   default_scope -> { where(firm_id: firm_id) if firm_id }, all_queries: true
 end
 
-class DeveloperWithIncludes < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithIncludes < ApplicationRecord
   self.table_name = "developers"
   has_many :audit_logs, foreign_key: :developer_id
   default_scope { includes(:audit_logs) }
 end
 
-class DeveloperFilteredOnJoins < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperFilteredOnJoins < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
@@ -197,7 +210,8 @@ class DeveloperFilteredOnJoins < ActiveRecord::Base
   end
 end
 
-class DeveloperOrderedBySalary < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperOrderedBySalary < ApplicationRecord
   include Developer::TimestampAliases
 
   self.table_name = "developers"
@@ -206,27 +220,32 @@ class DeveloperOrderedBySalary < ActiveRecord::Base
   scope :by_name, -> { order("name DESC") }
 end
 
-class DeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   default_scope { where("name = 'David'") }
 end
 
-class LazyLambdaDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class LazyLambdaDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   default_scope lambda { where(name: "David") }
 end
 
-class LazyBlockDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class LazyBlockDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   default_scope { where(name: "David") }
 end
 
-class CallableDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class CallableDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   default_scope OpenStruct.new(call: where(name: "David"))
 end
 
-class ClassMethodDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class ClassMethodDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
 
   def self.default_scope
@@ -234,7 +253,8 @@ class ClassMethodDeveloperCalledDavid < ActiveRecord::Base
   end
 end
 
-class ClassMethodReferencingScopeDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class ClassMethodReferencingScopeDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   scope :david, -> { where(name: "David") }
 
@@ -243,13 +263,15 @@ class ClassMethodReferencingScopeDeveloperCalledDavid < ActiveRecord::Base
   end
 end
 
-class LazyBlockReferencingScopeDeveloperCalledDavid < ActiveRecord::Base
+require 'models/application_record'
+class LazyBlockReferencingScopeDeveloperCalledDavid < ApplicationRecord
   self.table_name = "developers"
   scope :david, -> { where(name: "David") }
   default_scope { david }
 end
 
-class DeveloperCalledJamis < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperCalledJamis < ApplicationRecord
   include Developer::TimestampAliases
 
   self.table_name = "developers"
@@ -260,7 +282,8 @@ class DeveloperCalledJamis < ActiveRecord::Base
   scope :david2, -> { unscoped.where name: "David" }
 end
 
-class PoorDeveloperCalledJamis < ActiveRecord::Base
+require 'models/application_record'
+class PoorDeveloperCalledJamis < ApplicationRecord
   self.table_name = "developers"
 
   default_scope -> { where(name: "Jamis", salary: 50000) }
@@ -272,7 +295,8 @@ class InheritedPoorDeveloperCalledJamis < DeveloperCalledJamis
   default_scope -> { where(salary: 50000) }
 end
 
-class MultiplePoorDeveloperCalledJamis < ActiveRecord::Base
+require 'models/application_record'
+class MultiplePoorDeveloperCalledJamis < ApplicationRecord
   self.table_name = "developers"
 
   default_scope { }
@@ -292,14 +316,16 @@ class ModuleIncludedPoorDeveloperCalledJamis < DeveloperCalledJamis
   include SalaryDefaultScope
 end
 
-class EagerDeveloperWithDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class EagerDeveloperWithDefaultScope < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
   default_scope { includes(:projects) }
 end
 
-class EagerDeveloperWithClassMethodDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class EagerDeveloperWithClassMethodDefaultScope < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
@@ -308,28 +334,32 @@ class EagerDeveloperWithClassMethodDefaultScope < ActiveRecord::Base
   end
 end
 
-class EagerDeveloperWithLambdaDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class EagerDeveloperWithLambdaDefaultScope < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
   default_scope lambda { includes(:projects) }
 end
 
-class EagerDeveloperWithBlockDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class EagerDeveloperWithBlockDefaultScope < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
   default_scope { includes(:projects) }
 end
 
-class EagerDeveloperWithCallableDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class EagerDeveloperWithCallableDefaultScope < ApplicationRecord
   self.table_name = "developers"
   has_and_belongs_to_many :projects, -> { order("projects.id") }, foreign_key: "developer_id", join_table: "developers_projects"
 
   default_scope OpenStruct.new(call: includes(:projects))
 end
 
-class ThreadsafeDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class ThreadsafeDeveloper < ApplicationRecord
   self.table_name = "developers"
 
   def self.default_scope
@@ -338,14 +368,16 @@ class ThreadsafeDeveloper < ActiveRecord::Base
   end
 end
 
-class CachedDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class CachedDeveloper < ApplicationRecord
   include Developer::TimestampAliases
 
   self.table_name = "developers"
   self.cache_timestamp_format = :number
 end
 
-class DeveloperWithIncorrectlyOrderedHasManyThrough < ActiveRecord::Base
+require 'models/application_record'
+class DeveloperWithIncorrectlyOrderedHasManyThrough < ApplicationRecord
   self.table_name = "developers"
   has_many :companies, through: :contracts
   has_many :contracts, foreign_key: :developer_id
@@ -357,7 +389,8 @@ class DeveloperName < ActiveRecord::Type::String
   end
 end
 
-class AttributedDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class AttributedDeveloper < ApplicationRecord
   self.table_name = "developers"
 
   attribute :name, DeveloperName.new
@@ -365,7 +398,8 @@ class AttributedDeveloper < ActiveRecord::Base
   self.ignored_columns += ["name"]
 end
 
-class ColumnNamesCachedDeveloper < ActiveRecord::Base
+require 'models/application_record'
+class ColumnNamesCachedDeveloper < ApplicationRecord
   self.table_name = "developers"
   self.ignored_columns += ["name"] if column_names.include?("name")
 end

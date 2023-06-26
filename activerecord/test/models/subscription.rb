@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Subscription < ActiveRecord::Base
+require 'models/application_record'
+class Subscription < ApplicationRecord
   belongs_to :subscriber, counter_cache: :books_count
   belongs_to :book, -> { author_visibility_visible }
 

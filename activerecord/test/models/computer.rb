@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Computer < ActiveRecord::Base
+require 'models/application_record'
+class Computer < ApplicationRecord
   belongs_to :developer, foreign_key: "developer"
 end

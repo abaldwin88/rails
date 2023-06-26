@@ -3,7 +3,8 @@
 class LessonError < Exception
 end
 
-class Lesson < ActiveRecord::Base
+require 'models/application_record'
+class Lesson < ApplicationRecord
   has_and_belongs_to_many :students
   before_destroy :ensure_no_students
 

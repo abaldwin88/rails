@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Paragraph < ActiveRecord::Base
+require 'models/application_record'
+class Paragraph < ApplicationRecord
   belongs_to :book
 end

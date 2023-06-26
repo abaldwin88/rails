@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Cart < ActiveRecord::Base
+require 'models/application_record'
+class Cart < ApplicationRecord
   self.primary_key = :id
 end

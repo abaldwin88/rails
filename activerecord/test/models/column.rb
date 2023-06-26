@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Column < ActiveRecord::Base
+require 'models/application_record'
+class Column < ApplicationRecord
   belongs_to :record
 end

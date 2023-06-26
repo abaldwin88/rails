@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Guid < ActiveRecord::Base
+require 'models/application_record'
+class Guid < ApplicationRecord
 end

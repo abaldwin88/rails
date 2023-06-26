@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Eye < ActiveRecord::Base
+require 'models/application_record'
+class Eye < ApplicationRecord
   attr_reader :after_create_callbacks_stack
   attr_reader :after_update_callbacks_stack
   attr_reader :after_save_callbacks_stack
@@ -34,6 +35,7 @@ class Eye < ActiveRecord::Base
   alias trace_after_save2 trace_after_save
 end
 
-class Iris < ActiveRecord::Base
+require 'models/application_record'
+class Iris < ApplicationRecord
   belongs_to :eye
 end

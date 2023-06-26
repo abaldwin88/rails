@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class CakeDesigner < ActiveRecord::Base
+require 'models/application_record'
+class CakeDesigner < ApplicationRecord
   has_one :chef, as: :employable
 end

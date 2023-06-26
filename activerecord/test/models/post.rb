@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-class Post < ActiveRecord::Base
-  class CategoryPost < ActiveRecord::Base
+require 'models/application_record'
+class Post < ApplicationRecord
+require 'models/application_record'
+  class CategoryPost < ApplicationRecord
     self.table_name = "categories_posts"
     belongs_to :group, foreign_key: :category_id, class_name: "Category"
     belongs_to :category
@@ -227,7 +229,8 @@ class NullPost < Post
   default_scope { none }
 end
 
-class FirstPost < ActiveRecord::Base
+require 'models/application_record'
+class FirstPost < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   default_scope { where(id: 1) }
@@ -237,7 +240,8 @@ class FirstPost < ActiveRecord::Base
   has_one  :comment_with_inverse, class_name: "Comment", inverse_of: :post_with_inverse
 end
 
-class PostWithDefaultSelect < ActiveRecord::Base
+require 'models/application_record'
+class PostWithDefaultSelect < ApplicationRecord
   self.table_name = "posts"
 
   default_scope { select(:author_id) }
@@ -248,7 +252,8 @@ class TaggedPost < Post
   has_many :tags, through: :taggings
 end
 
-class PostWithDefaultInclude < ActiveRecord::Base
+require 'models/application_record'
+class PostWithDefaultInclude < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   default_scope { includes(:comments) }
@@ -260,13 +265,15 @@ class PostWithSpecialCategorization < Post
   default_scope { where(type: "PostWithSpecialCategorization").joins(:categorizations).where(categorizations: { special: true }) }
 end
 
-class PostWithDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class PostWithDefaultScope < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   default_scope { order(:title) }
 end
 
-class PostWithPreloadDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class PostWithPreloadDefaultScope < ApplicationRecord
   self.table_name = "posts"
 
   has_many :readers, foreign_key: "post_id"
@@ -274,7 +281,8 @@ class PostWithPreloadDefaultScope < ActiveRecord::Base
   default_scope { preload(:readers) }
 end
 
-class PostWithIncludesDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class PostWithIncludesDefaultScope < ApplicationRecord
   self.table_name = "posts"
 
   has_many :readers, foreign_key: "post_id"
@@ -282,7 +290,8 @@ class PostWithIncludesDefaultScope < ActiveRecord::Base
   default_scope { includes(:readers) }
 end
 
-class SpecialPostWithDefaultScope < ActiveRecord::Base
+require 'models/application_record'
+class SpecialPostWithDefaultScope < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   default_scope { where(id: [1, 5, 6]) }
@@ -290,7 +299,8 @@ class SpecialPostWithDefaultScope < ActiveRecord::Base
   scope :authorless, -> { unscoped { where(author_id: 0) } }
 end
 
-class PostThatLoadsCommentsInAnAfterSaveHook < ActiveRecord::Base
+require 'models/application_record'
+class PostThatLoadsCommentsInAnAfterSaveHook < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   has_many :comments, class_name: "CommentThatAutomaticallyAltersPostBody", foreign_key: :post_id
@@ -300,7 +310,8 @@ class PostThatLoadsCommentsInAnAfterSaveHook < ActiveRecord::Base
   end
 end
 
-class PostWithAfterCreateCallback < ActiveRecord::Base
+require 'models/application_record'
+class PostWithAfterCreateCallback < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   has_many :comments, foreign_key: :post_id
@@ -311,14 +322,16 @@ class PostWithAfterCreateCallback < ActiveRecord::Base
   end
 end
 
-class PostWithCommentWithDefaultScopeReferencesAssociation < ActiveRecord::Base
+require 'models/application_record'
+class PostWithCommentWithDefaultScopeReferencesAssociation < ApplicationRecord
   self.inheritance_column = :disabled
   self.table_name = "posts"
   has_many :comment_with_default_scope_references_associations, foreign_key: :post_id
   has_one :first_comment, class_name: "CommentWithDefaultScopeReferencesAssociation", foreign_key: :post_id
 end
 
-class SerializedPost < ActiveRecord::Base
+require 'models/application_record'
+class SerializedPost < ApplicationRecord
   serialize :title
 end
 
@@ -388,13 +401,15 @@ class FakeKlass
   inherited self
 end
 
-class Postesque < ActiveRecord::Base
+require 'models/application_record'
+class Postesque < ApplicationRecord
   belongs_to :author, class_name: "Author", foreign_key: :author_name, primary_key: :name
   belongs_to :author_with_address, class_name: "Author", foreign_key: :author_id
   belongs_to :author_with_the_letter_a, class_name: "Author", foreign_key: :author_id
 end
 
-class PostRecord < ActiveRecord::Base
+require 'models/application_record'
+class PostRecord < ApplicationRecord
   has_many :comments
 
   class << self

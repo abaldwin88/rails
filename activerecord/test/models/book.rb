@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Book < ActiveRecord::Base
+require 'models/application_record'
+class Book < ApplicationRecord
   belongs_to :author
   belongs_to :format_record, polymorphic: true
 
@@ -31,7 +32,8 @@ class Book < ActiveRecord::Base
   end
 end
 
-class PublishedBook < ActiveRecord::Base
+require 'models/application_record'
+class PublishedBook < ApplicationRecord
   self.table_name = "books"
 
   enum :cover, { hard: "0", soft: "1" }, default: :hard

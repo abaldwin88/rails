@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Organization < ActiveRecord::Base
+require 'models/application_record'
+class Organization < ApplicationRecord
   has_many :member_details
   has_many :members, through: :member_details
 

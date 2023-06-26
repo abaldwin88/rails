@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Human < ActiveRecord::Base
+require 'models/application_record'
+class Human < ApplicationRecord
   self.table_name = "humans"
 
   has_one :face, inverse_of: :human

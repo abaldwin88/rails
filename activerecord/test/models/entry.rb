@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Entry < ActiveRecord::Base
+require 'models/application_record'
+class Entry < ApplicationRecord
   delegated_type :entryable, types: %w[ Message Comment ]
   belongs_to :account, touch: true
 

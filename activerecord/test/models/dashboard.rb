@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Dashboard < ActiveRecord::Base
+require 'models/application_record'
+class Dashboard < ApplicationRecord
   self.primary_key = :dashboard_id
 end

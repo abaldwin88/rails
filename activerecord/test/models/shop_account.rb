@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ShopAccount < ActiveRecord::Base
+require 'models/application_record'
+class ShopAccount < ApplicationRecord
   belongs_to :customer
   belongs_to :customer_carrier
 

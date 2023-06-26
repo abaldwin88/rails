@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Publisher::Magazine < ActiveRecord::Base
+require 'models/application_record'
+class Publisher::Magazine < ApplicationRecord
   has_and_belongs_to_many :articles
 end

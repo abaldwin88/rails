@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Membership < ActiveRecord::Base
+require 'models/application_record'
+class Membership < ApplicationRecord
   enum type: %i(Membership CurrentMembership SuperMembership SelectedMembership TenantMembership)
   belongs_to :member
   belongs_to :club

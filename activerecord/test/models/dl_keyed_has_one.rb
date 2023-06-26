@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class DlKeyedHasOne < ActiveRecord::Base
+require 'models/application_record'
+class DlKeyedHasOne < ApplicationRecord
   self.primary_key = "has_one_key"
 end

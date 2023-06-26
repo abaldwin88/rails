@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Entrant < ActiveRecord::Base
+require 'models/application_record'
+class Entrant < ApplicationRecord
   belongs_to :course
 end

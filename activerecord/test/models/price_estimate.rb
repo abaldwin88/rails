@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class PriceEstimate < ActiveRecord::Base
+require 'models/application_record'
+class PriceEstimate < ApplicationRecord
   include ActiveSupport::NumberHelper
 
   belongs_to :estimate_of, polymorphic: true

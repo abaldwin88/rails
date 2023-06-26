@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class NonPrimaryKey < ActiveRecord::Base
+require 'models/application_record'
+class NonPrimaryKey < ApplicationRecord
 end

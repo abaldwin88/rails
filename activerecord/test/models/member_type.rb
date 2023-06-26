@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class MemberType < ActiveRecord::Base
+require 'models/application_record'
+class MemberType < ApplicationRecord
   has_many :members
 end

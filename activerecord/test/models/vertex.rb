@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 # This class models a vertex in a directed graph.
-class Vertex < ActiveRecord::Base
+require 'models/application_record'
+class Vertex < ApplicationRecord
   has_many :sink_edges, class_name: "Edge", foreign_key: "source_id"
   has_many :sinks, through: :sink_edges
 

@@ -1,6 +1,7 @@
  # frozen_string_literal: true
 
- class DestroyAsyncParent < ActiveRecord::Base
+require 'models/application_record'
+ class DestroyAsyncParent < ApplicationRecord
    self.primary_key = "parent_id"
 
    has_one :dl_keyed_has_one, dependent: :destroy_async,

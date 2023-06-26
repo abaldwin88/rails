@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Cpk
-  class Order < ActiveRecord::Base
+require 'models/application_record'
+  class Order < ApplicationRecord
     self.table_name = :cpk_orders
     # explicit definition is to allow schema definition to be simplified
     # to be shared between different databases

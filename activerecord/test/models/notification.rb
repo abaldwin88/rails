@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Notification < ActiveRecord::Base
+require 'models/application_record'
+class Notification < ApplicationRecord
   validates_presence_of :message
 end

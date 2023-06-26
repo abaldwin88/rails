@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Bird < ActiveRecord::Base
+require 'models/application_record'
+class Bird < ApplicationRecord
   belongs_to :pirate
   validates_presence_of :name
 

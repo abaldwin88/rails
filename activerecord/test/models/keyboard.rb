@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Keyboard < ActiveRecord::Base
+require 'models/application_record'
+class Keyboard < ApplicationRecord
   self.primary_key = "key_number"
 end

@@ -9,10 +9,10 @@ module LoadSchemaHelper
     adapter_name = ActiveRecord::Base.connection.adapter_name.downcase
     adapter_specific_schema_file = SCHEMA_ROOT + "/#{adapter_name}_specific_schema.rb"
 
-    load SCHEMA_ROOT + "/schema.rb"
+    # load SCHEMA_ROOT + "/schema.rb"
 
     if File.exist?(adapter_specific_schema_file)
-      load adapter_specific_schema_file
+      # load adapter_specific_schema_file
     end
 
     ActiveRecord::FixtureSet.reset_cache

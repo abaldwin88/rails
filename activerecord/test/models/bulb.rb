@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Bulb < ActiveRecord::Base
+require 'models/application_record'
+class Bulb < ApplicationRecord
   default_scope { where(name: "defaulty") }
   belongs_to :car, touch: true
   scope :awesome, -> { where(frickinawesome: true) }

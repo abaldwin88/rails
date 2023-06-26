@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Sharded
-  class CommentDestroyAsync < ActiveRecord::Base
+require 'models/application_record'
+  class CommentDestroyAsync < ApplicationRecord
     self.table_name = :sharded_comments
     query_constraints :blog_id, :id
 
@@ -10,3 +11,4 @@ module Sharded
     belongs_to :blog
   end
 end
+

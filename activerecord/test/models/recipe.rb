@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Recipe < ActiveRecord::Base
+require 'models/application_record'
+class Recipe < ApplicationRecord
   belongs_to :chef
 end

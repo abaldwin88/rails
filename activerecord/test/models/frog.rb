@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Frog < ActiveRecord::Base
+require 'models/application_record'
+class Frog < ApplicationRecord
   after_save do
     with_lock do
     end

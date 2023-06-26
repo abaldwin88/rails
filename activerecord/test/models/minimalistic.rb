@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Minimalistic < ActiveRecord::Base
+require 'models/application_record'
+class Minimalistic < ApplicationRecord
 end

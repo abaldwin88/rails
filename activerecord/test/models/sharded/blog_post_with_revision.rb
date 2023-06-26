@@ -2,7 +2,8 @@
 
 module Sharded
   # copy of the original `BlogPost` class, but with a different `query_constraints`
-  class BlogPostWithRevision < ActiveRecord::Base
+require 'models/application_record'
+  class BlogPostWithRevision < ApplicationRecord
     self.table_name = :sharded_blog_posts
     query_constraints :blog_id, :revision, :id
 

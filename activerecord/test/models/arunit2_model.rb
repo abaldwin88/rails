@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class ARUnit2Model < ActiveRecord::Base
+require 'models/application_record'
+class ARUnit2Model < ApplicationRecord
   self.abstract_class = true
 end

@@ -1,19 +1,23 @@
 # frozen_string_literal: true
 
 module Shop
-  class Collection < ActiveRecord::Base
+require 'models/application_record'
+  class Collection < ApplicationRecord
     has_many :products, dependent: :nullify
   end
 
-  class Product < ActiveRecord::Base
+require 'models/application_record'
+require 'models/application_record'
+  class Product < ApplicationRecord
     has_many :variants, dependent: :delete_all
     belongs_to :type
 
-    class Type < ActiveRecord::Base
+require 'models/application_record'
+    class Type < ApplicationRecord
       has_many :products
     end
   end
 
-  class Variant < ActiveRecord::Base
+  class Variant < ApplicationRecord
   end
 end

@@ -2,7 +2,8 @@
 
 require "models/destroy_async_parent_soft_delete"
 
-class DlKeyedBelongsToSoftDelete < ActiveRecord::Base
+require 'models/application_record'
+class DlKeyedBelongsToSoftDelete < ApplicationRecord
   belongs_to :destroy_async_parent_soft_delete,
     dependent: :destroy_async,
     ensuring_owner_was: :deleted?,

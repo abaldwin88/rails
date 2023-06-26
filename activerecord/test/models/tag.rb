@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Tag < ActiveRecord::Base
+require 'models/application_record'
+class Tag < ApplicationRecord
   has_many :taggings
   has_many :taggables, through: :taggings
   has_one  :tagging

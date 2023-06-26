@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 # `counter_cache` requires association class before `attr_readonly`.
-class Post < ActiveRecord::Base; end
+require 'models/application_record'
+class Post < ApplicationRecord; end
 
-class Comment < ActiveRecord::Base
+require 'models/application_record'
+class Comment < ApplicationRecord
   scope :limit_by, lambda { |l| limit(l) }
   scope :containing_the_letter_e, -> { where("comments.body LIKE '%e%'") }
   scope :not_again, -> { where("comments.body NOT LIKE '%again%'") }

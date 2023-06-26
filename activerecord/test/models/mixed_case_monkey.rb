@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class MixedCaseMonkey < ActiveRecord::Base
+require 'models/application_record'
+class MixedCaseMonkey < ApplicationRecord
   belongs_to :human
 end

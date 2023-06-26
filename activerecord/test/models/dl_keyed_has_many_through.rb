@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class DlKeyedHasManyThrough < ActiveRecord::Base
+require 'models/application_record'
+class DlKeyedHasManyThrough < ApplicationRecord
   self.primary_key = :through_key
 end

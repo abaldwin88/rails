@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class CustomerCarrier < ActiveRecord::Base
+require 'models/application_record'
+class CustomerCarrier < ApplicationRecord
   cattr_accessor :current_customer
 
   belongs_to :customer

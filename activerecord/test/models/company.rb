@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class AbstractCompany < ActiveRecord::Base
+require 'models/application_record'
+class AbstractCompany < ApplicationRecord
   self.abstract_class = true
 end
 

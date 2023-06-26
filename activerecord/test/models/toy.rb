@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-class Toy < ActiveRecord::Base
+require 'models/application_record'
+
+class Toy < ApplicationRecord
   self.primary_key = :toy_id
   belongs_to :pet
 

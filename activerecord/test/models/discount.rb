@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Discount < ActiveRecord::Base
+require 'models/application_record'
+class Discount < ApplicationRecord
 end

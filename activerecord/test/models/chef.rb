@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Chef < ActiveRecord::Base
+require 'models/application_record'
+class Chef < ApplicationRecord
   belongs_to :employable, polymorphic: true
   has_many :recipes
 end

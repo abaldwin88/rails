@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Movie < ActiveRecord::Base
+require 'models/application_record'
+class Movie < ApplicationRecord
   self.primary_key = "movieid"
 
   validates_presence_of :name

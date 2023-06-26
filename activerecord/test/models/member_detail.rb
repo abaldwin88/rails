@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class MemberDetail < ActiveRecord::Base
+require 'models/application_record'
+class MemberDetail < ApplicationRecord
   belongs_to :member, inverse_of: false
   belongs_to :organization
   has_one :member_type, through: :member

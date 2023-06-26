@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Essay < ActiveRecord::Base
+require 'models/application_record'
+class Essay < ApplicationRecord
   belongs_to :author, primary_key: :name
   belongs_to :writer, primary_key: :name, polymorphic: true
   belongs_to :category, primary_key: :name

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Default < ActiveRecord::Base
+require 'models/application_record'
+class Default < ApplicationRecord
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ClothingItem < ActiveRecord::Base
+require 'models/application_record'
+class ClothingItem < ApplicationRecord
   query_constraints :clothing_type, :color
 end
 

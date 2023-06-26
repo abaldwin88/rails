@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class WithoutTable < ActiveRecord::Base
+require 'models/application_record'
+class WithoutTable < ApplicationRecord
   default_scope -> { where(published: true) }
 end

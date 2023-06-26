@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Attachment < ActiveRecord::Base
+require 'models/application_record'
+class Attachment < ApplicationRecord
   belongs_to :record, polymorphic: true
 
   has_one :translation

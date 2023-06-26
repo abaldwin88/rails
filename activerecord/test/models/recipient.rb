@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Recipient < ActiveRecord::Base
+require 'models/application_record'
+class Recipient < ApplicationRecord
   belongs_to :message, touch: true
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class UserWithInvalidRelation < ActiveRecord::Base
+require 'models/application_record'
+class UserWithInvalidRelation < ApplicationRecord
   has_one :not_a_class
 
   has_one :class_name_provided_not_a_class, class_name: "NotAClass"
@@ -22,7 +23,8 @@ class AccountInvalid; end
 
 class InfoInvalid; end
 
-class UserInfoInvalid < ActiveRecord::Base
+require 'models/application_record'
+class UserInfoInvalid < ApplicationRecord
   belongs_to :info_invalid
   belongs_to :user_invalid
 end

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Topic < ActiveRecord::Base
+require 'models/application_record'
+class Topic < ApplicationRecord
   scope :base, -> { all }
   scope :written_before, lambda { |time|
     if time
@@ -147,7 +148,8 @@ class TitlePrimaryKeyTopic < Topic
 end
 
 module Web
-  class Topic < ActiveRecord::Base
+require 'models/application_record'
+  class Topic < ApplicationRecord
     has_many :replies, dependent: :destroy, foreign_key: "parent_id", class_name: "Web::Reply"
   end
 end

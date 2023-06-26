@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Job < ActiveRecord::Base
+require 'models/application_record'
+class Job < ApplicationRecord
   has_many :references
   has_many :people, through: :references
   belongs_to :ideal_reference, class_name: "Reference"

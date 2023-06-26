@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Tyre < ActiveRecord::Base
+require 'models/application_record'
+class Tyre < ApplicationRecord
   belongs_to :car
 
   def self.custom_find(id)

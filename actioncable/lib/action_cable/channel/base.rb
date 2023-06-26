@@ -108,7 +108,10 @@ module ActionCable
       attr_reader :params, :connection, :identifier
       delegate :logger, to: :connection
 
+
+
       class << self
+
         # A list of method names that should be considered actions. This
         # includes all public instance methods on a channel, less
         # any internal methods (defined on Base), adding back in

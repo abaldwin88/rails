@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Speedometer < ActiveRecord::Base
+require 'models/application_record'
+class Speedometer < ApplicationRecord
   self.primary_key = :speedometer_id
   belongs_to :dashboard
 

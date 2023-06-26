@@ -1,6 +1,7 @@
  # frozen_string_literal: true
 
- class DlKeyedJoin < ActiveRecord::Base
+require 'models/application_record'
+ class DlKeyedJoin < ApplicationRecord
    self.primary_key = "joins_key"
 
    belongs_to :destroy_async_parent,

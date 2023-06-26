@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Contract < ActiveRecord::Base
+require 'models/application_record'
+class Contract < ApplicationRecord
   belongs_to :company
   belongs_to :developer, primary_key: :id
   belongs_to :firm, foreign_key: "company_id"
@@ -35,7 +36,8 @@ class NewContract < Contract
   validates :company_id, presence: true
 end
 
-class SpecialContract < ActiveRecord::Base
+require 'models/application_record'
+class SpecialContract < ApplicationRecord
   self.table_name = "contracts"
   belongs_to :company
   belongs_to :special_developer, foreign_key: "developer_id"

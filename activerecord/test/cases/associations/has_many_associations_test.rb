@@ -428,6 +428,7 @@ class HasManyAssociationsTest < ActiveRecord::TestCase
 
     speedometer.reload
 
+    # TODO: yep
     assert_equal ["first", "second"], speedometer.minivans.map(&:name)
     assert_equal ["blue", "blue"], speedometer.minivans.map(&:color)
   end
@@ -3105,6 +3106,8 @@ class HasManyAssociationsTest < ActiveRecord::TestCase
   end
 
   def test_ids_reader_memoization
+    # TODO: Candidate
+
     car = Car.create!(name: "Tofaş")
     bulb = Bulb.create!(car: car)
 

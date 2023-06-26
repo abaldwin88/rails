@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Admin::Account < ActiveRecord::Base
+require 'models/application_record'
+class Admin::Account < ApplicationRecord
   has_many :users
 end

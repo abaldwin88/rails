@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Ship < ActiveRecord::Base
+require 'models/application_record'
+class Ship < ApplicationRecord
   self.record_timestamps = false
 
   belongs_to :pirate
@@ -22,7 +23,8 @@ class Ship < ActiveRecord::Base
   end
 end
 
-class ShipWithoutNestedAttributes < ActiveRecord::Base
+require 'models/application_record'
+class ShipWithoutNestedAttributes < ApplicationRecord
   self.table_name = "ships"
   has_many :prisoners, inverse_of: :ship
   has_many :parts, class_name: "ShipPart", foreign_key: :ship_id
@@ -31,11 +33,13 @@ class ShipWithoutNestedAttributes < ActiveRecord::Base
   validates :name, presence: true, if: -> { true }
 end
 
-class Prisoner < ActiveRecord::Base
+require 'models/application_record'
+class Prisoner < ApplicationRecord
   belongs_to :ship, autosave: true, class_name: "ShipWithoutNestedAttributes", inverse_of: :prisoners
 end
 
-class FamousShip < ActiveRecord::Base
+require 'models/application_record'
+class FamousShip < ApplicationRecord
   self.table_name = "ships"
   belongs_to :famous_pirate, foreign_key: :pirate_id
   validates_presence_of :name, on: :conference

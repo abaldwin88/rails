@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Subscriber < ActiveRecord::Base
+require 'models/application_record'
+class Subscriber < ApplicationRecord
   self.primary_key = "nick"
   has_many :subscriptions
   has_many :books, through: :subscriptions

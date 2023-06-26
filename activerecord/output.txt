@@ -1,0 +1,5176 @@
+Using postgresql
+Run options: --seed 52479
+
+# Running:
+
+....................................................clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+.....clustering..
+clustering..
+........................clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+............................clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..................................F
+
+Failure:
+DatabaseConnectedJsonEncodingTest#test_should_allow_except_option_for_list_of_authors [/workspaces/rails/activerecord/test/cases/json_serialization_test.rb:273]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-"[{\"id\":1},{\"id\":2}]"
++"[{\"id\":1,\"_rand\":\"0.213752412750967\"},{\"id\":2,\"_rand\":\"0.542561694761517\"}]"
+
+
+bin/test test/cases/json_serialization_test.rb:266
+
+........clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+..clustering..
+..clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.....................clustering..
+......................F
+
+Failure:
+FilterAttributesTest#test_string_filter_attributes_perform_partial_match [/workspaces/rails/activerecord/test/cases/filter_attributes_test.rb:45]:
+Expected: 1
+  Actual: 2
+
+bin/test test/cases/filter_attributes_test.rb:41
+
+...............................................................................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+...............................clustering..
+.....clustering..
+.........................................................................................................clustering..
+.clustering..
+...clustering..
+..clustering..
+.................................................S..................................................clustering..
+.........F
+
+Failure:
+ActiveRecord::AdapterTest#test_select_all_insert_update_delete_with_casted_binds [/workspaces/rails/activerecord/test/cases/adapter_test.rb:251]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-{"id"=>1, "title"=>"foo"}
++{"id"=>1, "title"=>"foo", "_rand"=>0.45131329001876e-1}
+
+
+bin/test test/cases/adapter_test.rb:240
+
+.....clustering..
+..F
+
+Failure:
+ActiveRecord::AdapterTest#test_select_all_insert_update_delete_with_binds [/workspaces/rails/activerecord/test/cases/adapter_test.rb:271]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-{"id"=>1, "title"=>"foo"}
++{"id"=>1, "title"=>"foo", "_rand"=>0.713407933590336e0}
+
+
+bin/test test/cases/adapter_test.rb:260
+
+clustering..
+clustering..
+.....F
+
+Failure:
+ActiveRecord::AdapterTest#test_indexes [/workspaces/rails/activerecord/test/cases/adapter_test.rb:83]:
+Expected [#<ActiveRecord::ConnectionAdapters::IndexDefinition:0x0000ffffa079a6f8 @table="accounts", @name="_rand_index_accounts", @unique=false, @columns=["_rand"], @lengths={}, @orders={}, @opclasses={}, @where=nil, @type=nil, @using=:btree, @include=nil, @comment=nil, @valid=true>] to be empty.
+
+bin/test test/cases/adapter_test.rb:79
+
+..................................................................................clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+................................................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.....................clustering..
+clustering..
+clustering..
+.....................................................................clustering..
+clustering..
+............................................................clustering..
+clustering..
+.clustering..
+clustering..
+...................clustering..
+clustering..
+.clustering..
+...........................clustering..
+clustering..
+............................................clustering..
+clustering..
+.......clustering..
+......clustering..
+clustering..
+........clustering..
+clustering..
+........clustering..
+clustering..
+clustering..
+................................clustering..
+clustering..
+....clustering..
+clustering..
+...clustering..
+clustering..
+......clustering..
+clustering..
+........clustering..
+clustering..
+..........clustering..
+......clustering..
+clustering..
+........clustering..
+........clustering..
+.clustering..
+clustering..
+......................clustering..
+clustering..
+.clustering..
+.......clustering..
+.........clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+.................clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+.....clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+......clustering..
+...clustering..
+...clustering..
+.....clustering..
+clustering..
+........clustering..
+......clustering..
+...................clustering..
+clustering..
+......................clustering..
+..............clustering..
+...............................................................................................clustering..
+clustering..
+.........clustering..
+clustering..
+......................................clustering..
+clustering..
+....................clustering..
+....clustering..
+clustering..
+clustering..
+...clustering..
+.......clustering..
+clustering..
+clustering..
+.......clustering..
+clustering..
+............clustering..
+..clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+...............clustering..
+clustering..
+clustering..
+clustering..
+...............clustering..
+..............clustering..
+..........clustering..
+.......clustering..
+.clustering..
+...............clustering..
+clustering..
+.......................clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.....clustering..
+....clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+..........clustering..
+clustering..
+....clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+.clustering..
+clustering..
+.....clustering..
+.clustering..
+.....clustering..
+clustering..
+.clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+....clustering..
+..clustering..
+...clustering..
+clustering..
+....clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+....clustering..
+clustering..
+.clustering..
+...................clustering..
+......................clustering..
+..clustering..
+..clustering..
+.clustering..
+..clustering..
+...clustering..
+..clustering..
+clustering..
+.........clustering..
+...........clustering..
+...clustering..
+....clustering..
+.......clustering..
+clustering..
+.......clustering..
+.....clustering..
+..clustering..
+..clustering..
+.....clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+...clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+...........clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+....................................clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+..........clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+......clustering..
+clustering..
+...clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+..clustering..
+.........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+......clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+......clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+......clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+E
+
+Error:
+HasAndBelongsToManyAssociationsTest#test_alternate_database:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/associations/has_and_belongs_to_many_associations_test.rb:946:in `test_alternate_database'
+
+bin/test test/cases/associations/has_and_belongs_to_many_associations_test.rb:945
+
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+...........clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.........................................................F
+
+Failure:
+CoreTest#test_inspect_instance [/workspaces/rails/activerecord/test/cases/core_test.rb:22]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-"#<Topic id: 1, title: \"The First Topic\", author_name: \"David\", author_email_address: \"david@loudthinking.com\", written_on: \"2003-07-16 14:28:11.223300000 +0000\", bonus_time: \"2000-01-01 14:28:00.000000000 +0000\", last_read: \"2004-04-15\", content: \"Have a nice day\", important: nil, binary_content: nil, approved: false, replies_count: 1, unique_replies_count: 0, parent_id: nil, parent_title: nil, type: nil, group: nil, created_at: \"2023-06-26 02:03:19.404490000 +0000\", updated_at: \"2023-06-26 02:03:19.404490000 +0000\">"
++"#<Topic id: 1, title: \"The First Topic\", author_name: \"David\", author_email_address: \"david@loudthinking.com\", written_on: \"2003-07-16 14:28:11.223300000 +0000\", bonus_time: \"2000-01-01 14:28:00.000000000 +0000\", last_read: \"2004-04-15\", content: \"Have a nice day\", important: nil, binary_content: nil, approved: false, replies_count: 1, unique_replies_count: 0, parent_id: nil, parent_title: nil, type: nil, group: nil, created_at: \"2023-06-26 02:03:19.404490000 +0000\", updated_at: \"2023-06-26 02:03:19.404490000 +0000\", _rand: 0.24726306402815e0>"
+
+
+bin/test test/cases/core_test.rb:20
+
+....F
+
+Failure:
+CoreTest#test_pretty_print_persisted [/workspaces/rails/activerecord/test/cases/core_test.rb:115]:
+Expected /\A#<Topic:0x\w+
+ id: 1,
+ title: "The First Topic",
+ author_name: "David",
+ author_email_address: "david@loudthinking.com",
+ written_on: 2003-07-16 14:28:11(?:.2233)? UTC,
+ bonus_time: 2000-01-01 14:28:00 UTC,
+ last_read: Thu, 15 Apr 2004,
+ content: "Have a nice day",
+ important: nil,
+ binary_content: nil,
+ approved: false,
+ replies_count: 1,
+ unique_replies_count: 0,
+ parent_id: nil,
+ parent_title: nil,
+ type: nil,
+ group: nil,
+ created_at: [^,]+,
+ updated_at: [^,>]+>
+\z/ to match "#<Topic:0x0000ffff8bcc3860\n id: 1,\n title: \"The First Topic\",\n author_name: \"David\",\n author_email_address: \"david@loudthinking.com\",\n written_on: 2003-07-16 14:28:11.2233 UTC,\n bonus_time: 2000-01-01 14:28:00 UTC,\n last_read: Thu, 15 Apr 2004,\n content: \"Have a nice day\",\n important: nil,\n binary_content: nil,\n approved: false,\n replies_count: 1,\n unique_replies_count: 0,\n parent_id: nil,\n parent_title: nil,\n type: nil,\n group: nil,\n created_at: 2023-06-26 02:03:19.40449 UTC,\n updated_at: 2023-06-26 02:03:19.40449 UTC,\n _rand: 0.24726306402815e0>\n".
+
+bin/test test/cases/core_test.rb:89
+
+...F
+
+Failure:
+CoreTest#test_inspect_instance_with_lambda_date_formatter [/workspaces/rails/activerecord/test/cases/core_test.rb:30]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-"#<Topic id: 1, title: \"The First Topic\", author_name: \"David\", author_email_address: \"david@loudthinking.com\", written_on: \"my_format\", bonus_time: \"my_format\", last_read: \"2004-04-15\", content: \"Have a nice day\", important: nil, binary_content: nil, approved: false, replies_count: 1, unique_replies_count: 0, parent_id: nil, parent_title: nil, type: nil, group: nil, created_at: \"my_format\", updated_at: \"my_format\">"
++"#<Topic id: 1, title: \"The First Topic\", author_name: \"David\", author_email_address: \"david@loudthinking.com\", written_on: \"my_format\", bonus_time: \"my_format\", last_read: \"2004-04-15\", content: \"Have a nice day\", important: nil, binary_content: nil, approved: false, replies_count: 1, unique_replies_count: 0, parent_id: nil, parent_title: nil, type: nil, group: nil, created_at: \"my_format\", updated_at: \"my_format\", _rand: 0.24726306402815e0>"
+
+
+bin/test test/cases/core_test.rb:25
+
+F
+
+Failure:
+CoreTest#test_pretty_print_new [/workspaces/rails/activerecord/test/cases/core_test.rb:86]:
+Expected false to be truthy.
+
+bin/test test/cases/core_test.rb:59
+
+...........................S..S.S...clustering..
+clustering..
+...clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+................clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.....................................................................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+....clustering..
+clustering..
+.........................clustering..
+....clustering..
+.clustering..
+....clustering..
+......................clustering..
+.clustering..
+...clustering..
+...clustering..
+.clustering..
+.......clustering..
+...clustering..
+clustering..
+..clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+......clustering..
+..................................................................................................................................................................................................................................clustering..
+.clustering..
+.clustering..
+...clustering..
+.........................................clustering..
+......................................................clustering..
+.....................clustering..
+.......clustering..
+......clustering..
+...clustering..
+...................clustering..
+.................................clustering..
+.clustering..
+...........................................................................................clustering..
+E
+
+Error:
+ForeignTableTest#test_does_not_have_a_primary_key:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_does_not_have_a_primary_key:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:84
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_foreign_tables:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_foreign_tables:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:63
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_foreign_table_exists:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_foreign_table_exists:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:67
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_attribute_names:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_attribute_names:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:75
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_foreign_tables_are_valid_data_sources:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_foreign_tables_are_valid_data_sources:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:58
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_attributes:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_attributes:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:79
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_table_exists:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_table_exists:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:53
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_update_record:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_update_record:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:96
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_delete_record:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_delete_record:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:104
+
+clustering..
+E
+
+Error:
+ForeignTableTest#test_insert_record:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "professors" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:19:in `setup'
+
+Error:
+ForeignTableTest#test_insert_record:
+NoMethodError: undefined method `supports_extensions?' for nil:NilClass
+    /workspaces/rails/activerecord/test/support/adapter_helper.rb:74:in `disable_extension!'
+    /workspaces/rails/activerecord/test/cases/adapters/postgresql/foreign_table_test.rb:47:in `teardown'
+
+bin/test test/cases/adapters/postgresql/foreign_table_test.rb:88
+
+...............................................................................................................................clustering..
+.clustering..
+.......................S.......................clustering..
+clustering..
+....clustering..
+......................clustering..
+....clustering..
+.....................................................................................clustering..
+.............clustering..
+clustering..
+...........clustering..
+...........clustering..
+..................clustering..
+clustering..
+...clustering..
+clustering..
+.........clustering..
+...clustering..
+......................clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+.........................clustering..
+..................clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+E
+
+Error:
+HasManyThroughAssociationsTest#test_belongs_to_with_dependent_destroy:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "references"
+LINE 1: CLUSTER references USING _rand_index_references
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:212:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_association.rb:316:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_association.rb:357:in `_create_record'
+    /workspaces/rails/activerecord/lib/active_record/associations/has_many_association.rb:147:in `_create_record'
+    /workspaces/rails/activerecord/lib/active_record/associations/association.rb:210:in `create!'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_proxy.rb:366:in `create!'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_through_associations_test.rb:549:in `test_belongs_to_with_dependent_destroy'
+
+bin/test test/cases/associations/has_many_through_associations_test.rb:545
+
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+E
+
+Error:
+HasManyThroughAssociationsTest#test_belongs_to_with_dependent_delete_all:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "references"
+LINE 1: CLUSTER references USING _rand_index_references
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:212:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_association.rb:316:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_association.rb:357:in `_create_record'
+    /workspaces/rails/activerecord/lib/active_record/associations/has_many_association.rb:147:in `_create_record'
+    /workspaces/rails/activerecord/lib/active_record/associations/association.rb:210:in `create!'
+    /workspaces/rails/activerecord/lib/active_record/associations/collection_proxy.rb:366:in `create!'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_through_associations_test.rb:562:in `test_belongs_to_with_dependent_delete_all'
+
+bin/test test/cases/associations/has_many_through_associations_test.rb:558
+
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.S...S......SS.SS...........SSS............clustering..
+.clustering..
+....clustering..
+...clustering..
+...............clustering..
+.clustering..
+.clustering..
+.clustering..
+.......clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.....clustering..
+.................clustering..
+.clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+........................clustering..
+.................clustering..
+...clustering..
+..clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+....clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+..clustering..
+..clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.....................................S.................................clustering..
+......................................................clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+......................clustering..
+clustering..
+.........clustering..
+..clustering..
+...............clustering..
+clustering..
+clustering..
+clustering..
+.............................................................................................................................................................................................................clustering..
+.clustering..
+clustering..
+.............................................................clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+F
+
+Failure:
+DirtyTest#test_saved_changes_returns_a_hash_of_all_the_changes_that_occurred [/workspaces/rails/activerecord/test/cases/dirty_test.rb:899]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["created_at", "first_name", "gender", "id", "updated_at"]
++["_rand", "created_at", "first_name", "gender", "id", "updated_at"]
+
+
+bin/test test/cases/dirty_test.rb:894
+
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+F
+
+Failure:
+DirtyTest#test_previous_changes [/workspaces/rails/activerecord/test/cases/dirty_test.rb:523]:
+Expected: 4
+  Actual: 5
+
+bin/test test/cases/dirty_test.rb:515
+
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+...............................................clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.......clustering..
+................................clustering..
+................clustering..
+............clustering..
+clustering..
+...............clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+........................................clustering..
+clustering..
+...........clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+..........clustering..
+.clustering..
+........clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+...............clustering..
+clustering..
+.................................................clustering..
+.clustering..
+.clustering..
+.clustering..
+................clustering..
+.clustering..
+.clustering..
+.clustering..
+...................................................................clustering..
+...clustering..
+...clustering..
+....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.....clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+..clustering..
+..clustering..
+clustering..
+....clustering..
+clustering..
+.....clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+......clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+...clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.........clustering..
+clustering..
+.....clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+.clustering..
+..clustering..
+clustering..
+....clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.......clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+.....clustering..
+clustering..
+....clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+.clustering..
+.....................................S..........................................clustering..
+clustering..
+.........................clustering..
+.....clustering..
+clustering..
+clustering..
+........................clustering..
+.clustering..
+.clustering..
+.clustering..
+..................................clustering..
+.....................................clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+F
+
+Failure:
+HasManyThroughDisableJoinsAssociationsTest#test_pluck_on_disable_joins_through_a_through [/workspaces/rails/activerecord/test/cases/associations/has_many_through_disable_joins_associations_test.rb:110]:
+Expected: [44, 45]
+  Actual: [45, 44]
+
+bin/test test/cases/associations/has_many_through_disable_joins_associations_test.rb:106
+
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..........................clustering..
+.clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+.clustering..
+...clustering..
+.clustering..
+......................................................................................................clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+E
+
+Error:
+UniquenessValidationWithIndexTest#test_uniqueness_on_custom_relation_primary_key:
+ActiveRecord::RecordInvalid: Validation failed: Keyboard has already been taken
+    /workspaces/rails/activerecord/lib/active_record/validations.rb:84:in `raise_validation_error'
+    /workspaces/rails/activerecord/lib/active_record/validations.rb:55:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `block in save!'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:365:in `block in with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:491:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:55:in `create!'
+    /workspaces/rails/activerecord/test/cases/validations/uniqueness_validation_test.rb:781:in `test_uniqueness_on_custom_relation_primary_key'
+
+bin/test test/cases/validations/uniqueness_validation_test.rb:779
+
+clustering..
+..clustering..
+....................................................................................clustering..
+clustering..
+clustering..
+...clustering..
+....clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.....clustering..
+.clustering..
+......clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+......clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+...........clustering..
+.clustering..
+.clustering..
+....................................clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+............................................................clustering..
+clustering..
+...........clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.....................................................clustering..
+.clustering..
+.clustering..
+.clustering..
+............................................................................................clustering..
+clustering..
+.........................clustering..
+.....clustering..
+clustering..
+......................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+..........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.....clustering..
+..clustering..
+clustering..
+........clustering..
+clustering..
+...........clustering..
+..S........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.......clustering..
+clustering..
+.....clustering..
+clustering..
+....clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+.........clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+........................clustering..
+..clustering..
+clustering..
+....F
+
+Failure:
+CalculationsTest#test_pluck_without_column_names [/workspaces/rails/activerecord/test/cases/calculations_test.rb:842]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-[[1, "Firm", 1, nil, "37signals", nil, 1, nil, "", "active"]]
++[[1, "Firm", 1, nil, "37signals", nil, 1, nil, "", "active", 0.644951566826951e0]]
+
+
+bin/test test/cases/calculations_test.rb:838
+
+.clustering..
+clustering..
+.....clustering..
+clustering..
+..clustering..
+E
+
+Error:
+CalculationsTest#test_pluck_with_reserved_words:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "having"
+LINE 1: CLUSTER having USING _rand_index_having
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:55:in `create!'
+    /workspaces/rails/activerecord/test/cases/calculations_test.rb:1175:in `test_pluck_with_reserved_words'
+
+bin/test test/cases/calculations_test.rb:1174
+
+.....clustering..
+clustering..
+..................clustering..
+...clustering..
+clustering..
+............clustering..
+...clustering..
+..........clustering..
+clustering..
+...clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+......clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+...clustering..
+...clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+....clustering..
+E
+
+Error:
+HasManyAssociationsTest#test_has_many_build_with_options:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "colleges" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:309:in `save'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:52:in `save'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:38:in `create'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:179:in `test_has_many_build_with_options'
+
+bin/test test/cases/associations/has_many_associations_test.rb:178
+
+..clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+....clustering..
+clustering..
+...clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+...clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+E
+
+Error:
+HasManyAssociationsTest#test_update_all_respects_association_scope:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "references"
+LINE 1: CLUSTER references USING _rand_index_references
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:622:in `test_update_all_respects_association_scope'
+
+bin/test test/cases/associations/has_many_associations_test.rb:618
+
+clustering..
+clustering..
+.....clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+....clustering..
+E
+
+Error:
+HasManyAssociationsTest#test_has_many_with_out_of_range_value:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "references"
+LINE 1: CLUSTER references USING _rand_index_references
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/persistence.rb:55:in `create!'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:3145:in `test_has_many_with_out_of_range_value'
+
+bin/test test/cases/associations/has_many_associations_test.rb:3144
+
+.clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+....clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+.....clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+.....clustering..
+clustering..
+..clustering..
+..clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+..clustering..
+.....clustering..
+...clustering..
+...clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+....clustering..
+clustering..
+E
+
+Error:
+HasManyAssociationsTest#test_exists_respects_association_scope:
+ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  syntax error at or near "references"
+LINE 1: CLUSTER references USING _rand_index_references
+                ^
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:23:in `block in synchronize'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `handle_interrupt'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/load_interlock_aware_monitor.rb:19:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:630:in `test_exists_respects_association_scope'
+
+bin/test test/cases/associations/has_many_associations_test.rb:626
+
+...clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+......clustering..
+clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+...........clustering..
+clustering..
+...clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+.clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+........clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+...clustering..
+...clustering..
+clustering..
+clustering..
+...clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.......clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+.clustering..
+clustering..
+clustering..
+.....clustering..
+.......clustering..
+clustering..
+clustering..
+F
+
+Failure:
+HasManyAssociationsTest#test_create!_the_association_with_an_array [/workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:431]:
+Expected: ["first", "second"]
+  Actual: ["second", "first"]
+
+bin/test test/cases/associations/has_many_associations_test.rb:422
+
+...clustering..
+.clustering..
+clustering..
+clustering..
+F
+
+Failure:
+HasManyAssociationsTest#test_ids_reader_memoization [/workspaces/rails/activerecord/test/cases/associations/has_many_associations_test.rb:3118]:
+Expected: [760526722, 760526723]
+  Actual: [760526723, 760526722]
+
+bin/test test/cases/associations/has_many_associations_test.rb:3107
+
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+.......clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+.clustering..
+....clustering..
+..........clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+........clustering..
+.......clustering..
+clustering..
+.............F
+
+Failure:
+BasicsTest#test_attribute_names [/workspaces/rails/activerecord/test/cases/base_test.rb:1568]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["id", "type", "firm_id", "firm_name", "name", "client_of", "rating", "account_id", "description", "status", "metadata"]
++["id", "type", "firm_id", "firm_name", "name", "client_of", "rating", "account_id", "description", "status", "_rand", "metadata"]
+
+
+bin/test test/cases/base_test.rb:1566
+
+.......clustering..
+.......clustering..
+......clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+.clustering..
+.......clustering..
+....clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+...clustering..
+..clustering..
+clustering..
+...clustering..
+..............clustering..
+clustering..
+..........clustering..
+...............clustering..
+..clustering..
+...................clustering..
+...clustering..
+......clustering..
+....clustering..
+clustering..
+....clustering..
+clustering..
+.........clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+..clustering..
+..clustering..
+.....clustering..
+..clustering..
+........clustering..
+clustering..
+..clustering..
+...Sclustering..
+.clustering..
+........clustering..
+.......clustering..
+....Sclustering..
+clustering..
+...........clustering..
+......clustering..
+....clustering..
+........S............clustering..
+.....clustering..
+clustering..
+.............................clustering..
+.clustering..
+.............clustering..
+...........clustering..
+......clustering..
+...clustering..
+.............clustering..
+...clustering..
+..clustering..
+..clustering..
+...........clustering..
+....................................................................................................................................................clustering..
+clustering..
+clustering..
+......clustering..
+.....clustering..
+.....clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+..clustering..
+clustering..
+..clustering..
+.....clustering..
+.....clustering..
+...........clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+......clustering..
+.clustering..
+clustering..
+.....clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+........clustering..
+clustering..
+......clustering..
+.....clustering..
+...clustering..
+........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.....................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.........clustering..
+.................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..................................clustering..
+.clustering..
+.clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+...............................................................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.........F
+
+Failure:
+ReflectionTest#test_content_columns [/workspaces/rails/activerecord/test/cases/reflection_test.rb:66]:
+Expected: 14
+  Actual: 15
+
+bin/test test/cases/reflection_test.rb:63
+
+.F
+
+Failure:
+ReflectionTest#test_columns [/workspaces/rails/activerecord/test/cases/reflection_test.rb:55]:
+Expected: 19
+  Actual: 20
+
+bin/test test/cases/reflection_test.rb:54
+
+....clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+....F
+
+Failure:
+ReflectionTest#test_read_attribute_names [/workspaces/rails/activerecord/test/cases/reflection_test.rb:48]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["approved", "author_email_address", "author_name", "binary_content", "bonus_time", "content", "created_at", "group", "id", "important", "last_read", "parent_id", "parent_title", "replies_count", "title", "type", "unique_replies_count", "updated_at", "written_on"]
++["_rand", "approved", "author_email_address", "author_name", "binary_content", "bonus_time", "content", "created_at", "group", "id", "important", "last_read", "parent_id", "parent_title", "replies_count", "title", "type", "unique_replies_count", "updated_at", "written_on"]
+
+
+bin/test test/cases/reflection_test.rb:47
+
+...clustering..
+clustering..
+clustering..
+.............F
+
+Failure:
+ReflectionTest#test_columns_are_returned_in_the_order_they_were_declared [/workspaces/rails/activerecord/test/cases/reflection_test.rb:60]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["id", "title", "author_name", "author_email_address", "written_on", "bonus_time", "last_read", "content", "important", "binary_content", "approved", "replies_count", "unique_replies_count", "parent_id", "parent_title", "type", "group", "created_at", "updated_at"]
++["id", "title", "author_name", "author_email_address", "written_on", "bonus_time", "last_read", "content", "important", "binary_content", "approved", "replies_count", "unique_replies_count", "parent_id", "parent_title", "type", "group", "created_at", "updated_at", "_rand"]
+
+
+bin/test test/cases/reflection_test.rb:58
+
+..........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...............clustering..
+....................................clustering..
+clustering..
+.clustering..
+clustering..
+...........F
+
+Failure:
+ActiveRecord::SelectTest#test_star_select_with_joins_and_includes [/workspaces/rails/activerecord/test/cases/relation/select_test.rb:142]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["id", "author_id", "title", "body", "type", "legacy_comments_count", "taggings_with_delete_all_count", "taggings_with_destroy_count", "tags_count", "indestructible_tags_count", "tags_with_destroy_count", "tags_with_nullify_count"]
++["id", "author_id", "title", "body", "type", "legacy_comments_count", "taggings_with_delete_all_count", "taggings_with_destroy_count", "tags_count", "indestructible_tags_count", "tags_with_destroy_count", "tags_with_nullify_count", "_rand"]
+
+
+bin/test test/cases/relation/select_test.rb:140
+
+................................................clustering..
+........................................clustering..
+clustering..
+clustering..
+..............clustering..
+clustering..
+clustering..
+clustering..
+................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+....................................clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+............clustering..
+clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+.....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..............clustering..
+........clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..................clustering..
+clustering..
+......................clustering..
+............clustering..
+clustering..
+.....clustering..
+clustering..
+..........................clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..............clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+...........................................................clustering..
+...clustering..
+.clustering..
+.clustering..
+.clustering..
+..........................................................................................................clustering..
+...clustering..
+....clustering..
+.............clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+..clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+..................clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+........clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+....clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+..clustering..
+.........clustering..
+clustering..
+clustering..
+........clustering..
+clustering..
+...clustering..
+clustering..
+...clustering..
+.clustering..
+clustering..
+clustering..
+..clustering..
+..clustering..
+................................clustering..
+.clustering..
+......clustering..
+clustering..
+clustering..
+....clustering..
+..clustering..
+clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+.clustering..
+..clustering..
+..clustering..
+clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+..clustering..
+...clustering..
+clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+..clustering..
+...clustering..
+clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.......................clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+.clustering..
+........................................clustering..
+clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+...........clustering..
+........................................F
+
+Failure:
+ActiveRecord::ConnectionAdapters::SchemaCacheTest#test_yaml_loads_5_1_dump_without_indexes_still_queries_for_indexes [/workspaces/rails/activerecord/test/cases/connection_adapters/schema_cache_test.rb:116]:
+Expected: 1
+  Actual: 2
+
+bin/test test/cases/connection_adapters/schema_cache_test.rb:112
+
+.F
+
+Failure:
+ActiveRecord::ConnectionAdapters::SchemaCacheTest#test_yaml_dump_and_load [/workspaces/rails/activerecord/test/cases/connection_adapters/schema_cache_test.rb:31]:
+Expected: 12
+  Actual: 13
+
+bin/test test/cases/connection_adapters/schema_cache_test.rb:14
+
+.................................................................clustering..
+...........clustering..
+clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+clustering..
+.............................clustering..
+clustering..
+........clustering..
+...clustering..
+.............F
+
+Failure:
+AttributeMethodsTest#test_case-sensitive_attributes_hash [/workspaces/rails/activerecord/test/cases/attribute_methods_test.rb:287]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-["created_at", "developer", "extendedWarranty", "id", "system", "timezone", "updated_at"]
++["_rand", "created_at", "developer", "extendedWarranty", "id", "system", "timezone", "updated_at"]
+
+
+bin/test test/cases/attribute_methods_test.rb:285
+
+............clustering..
+......clustering..
+...................clustering..
+.clustering..
+......clustering..
+..clustering..
+.............clustering..
+.clustering..
+clustering..
+..clustering..
+.........F
+
+Failure:
+AttributeMethodsTest#test_read_attributes_before_type_cast [/workspaces/rails/activerecord/test/cases/attribute_methods_test.rb:193]:
+--- expected
++++ actual
+@@ -1 +1 @@
+-{"name"=>"Test category", "id"=>nil, "type"=>nil, "categorizations_count"=>nil}
++{"id"=>nil, "name"=>"Test category", "type"=>nil, "categorizations_count"=>nil, "_rand"=>nil}
+
+
+bin/test test/cases/attribute_methods_test.rb:190
+
+....clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+....clustering..
+clustering..
+..clustering..
+clustering..
+..clustering..
+.clustering..
+clustering..
+..clustering..
+...clustering..
+.clustering..
+.....clustering..
+.clustering..
+clustering..
+..clustering..
+...clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+clustering..
+..clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+......clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.......clustering..
+clustering..
+..clustering..
+clustering..
+.clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+..clustering..
+....clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+...clustering..
+clustering..
+.......................................clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+...clustering..
+clustering..
+clustering..
+clustering..
+....................................................................................................................................clustering..
+clustering..
+clustering..
+E
+
+Error:
+FixturesResetPkSequenceTest#test_resets_to_min_pk_with_specified_pk_and_sequence:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "courses" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:683:in `block in test_resets_to_min_pk_with_specified_pk_and_sequence'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:678:in `each'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:678:in `test_resets_to_min_pk_with_specified_pk_and_sequence'
+
+bin/test test/cases/fixtures_test.rb:677
+
+clustering..
+clustering..
+clustering..
+E
+
+Error:
+FixturesResetPkSequenceTest#test_resets_to_min_pk_with_default_pk_and_sequence:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "courses" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:694:in `block in test_resets_to_min_pk_with_default_pk_and_sequence'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:689:in `each'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:689:in `test_resets_to_min_pk_with_default_pk_and_sequence'
+
+bin/test test/cases/fixtures_test.rb:688
+
+clustering..
+clustering..
+clustering..
+E
+
+Error:
+FixturesResetPkSequenceTest#test_create_fixtures_resets_sequences_when_not_cached:
+ActiveRecord::StatementInvalid: PG::UndefinedTable: ERROR:  relation "courses" does not exist
+
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `exec'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:53:in `block (2 levels) in raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1031:in `block in with_raw_connection'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1003:in `with_raw_connection'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:52:in `block in raw_execute'
+    /workspaces/rails/activesupport/lib/active_support/notifications/instrumenter.rb:58:in `instrument'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb:1141:in `log'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:51:in `raw_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:519:in `internal_execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:131:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:25:in `execute'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/postgresql/database_statements.rb:45:in `execute'
+    /workspaces/rails/activerecord/test/models/application_record.rb:8:in `block in <class:ApplicationRecord>'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `instance_exec'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:448:in `block in make_lambda'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:264:in `block in conditional'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `block in invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `each'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:602:in `invoke_after'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:111:in `run_callbacks'
+    /workspaces/rails/activesupport/lib/active_support/callbacks.rb:949:in `_run_commit_callbacks'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:332:in `committed!'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:201:in `block in commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:227:in `run_action_on_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:200:in `commit_records'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:471:in `block in commit_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:455:in `commit_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:526:in `block in within_new_transaction'
+    /workspaces/rails/activesupport/lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/transaction.rb:488:in `within_new_transaction'
+    /workspaces/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:342:in `transaction'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:361:in `with_transaction_returning_status'
+    /workspaces/rails/activerecord/lib/active_record/transactions.rb:313:in `save!'
+    /workspaces/rails/activerecord/lib/active_record/suppressor.rb:56:in `save!'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:707:in `block in test_create_fixtures_resets_sequences_when_not_cached'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:700:in `each'
+    /workspaces/rails/activerecord/test/cases/fixtures_test.rb:700:in `test_create_fixtures_resets_sequences_when_not_cached'
+
+bin/test test/cases/fixtures_test.rb:699
+
+.......................................................clustering..
+..clustering..
+..clustering..
+....clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+..............................................................................................clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+......clustering..
+...........................................clustering..
+.............clustering..
+.clustering..
+.clustering..
+..clustering..
+.......clustering..
+.........clustering..
+...clustering..
+........................................................clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+....clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+...........................................................................................................clustering..
+.........clustering..
+..clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+...clustering..
+.clustering..
+..clustering..
+.clustering..
+.clustering..
+.clustering..
+...............clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+.......clustering..
+clustering..
+.clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+.clustering..
+.clustering..
+clustering..
+.clustering..
+.clustering..
+clustering..
+clustering..
+....................................................................................clustering..
+.......clustering..
+..clustering..
+.clustering..
+....clustering..
+.clustering..
+clustering..
+.clustering..
+..clustering..
+..clustering..
+......clustering..
+..clustering..
+............clustering..
+..clustering..
+....clustering..
+.....clustering..
+........clustering..
+....clustering..
+....clustering..
+clustering..
+clustering..
+clustering..
+.clustering..
+............clustering..
+.......clustering..
+clustering..
+....clustering..
+.clustering..
+...clustering..
+clustering..
+.......clustering..
+clustering..
+....clustering..
+.........clustering..
+...clustering..
+.........clustering..
+.clustering..
+.....clustering..
+...........E
+
+Error:
+ReloadModelsTest#test_has_one_with_reload:
+NameError: uninitialized constant ApplicationRecord
+    /workspaces/rails/activerecord/test/models/owner.rb:4:in `<top (required)>'
+    /workspaces/rails/activerecord/test/cases/reload_models_test.rb:21:in `load'
+    /workspaces/rails/activerecord/test/cases/reload_models_test.rb:21:in `test_has_one_with_reload'
+
+bin/test test/cases/reload_models_test.rb:13
+
+
+
+Finished in 309.881959s, 29.4306 runs/s, 96.5109 assertions/s.
+9120 runs, 29907 assertions, 25 failures, 23 errors, 20 skips
+
+You have skipped tests. Run with --verbose for details.

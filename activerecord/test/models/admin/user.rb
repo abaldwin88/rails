@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Admin::User < ActiveRecord::Base
+require 'models/application_record'
+class Admin::User < ApplicationRecord
   class Coder
     def initialize(default = {})
       @default = default

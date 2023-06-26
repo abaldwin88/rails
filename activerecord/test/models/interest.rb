@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Interest < ActiveRecord::Base
+require 'models/application_record'
+class Interest < ApplicationRecord
   belongs_to :human, inverse_of: :interests
   belongs_to :human_with_callbacks,
     class_name: "Human",

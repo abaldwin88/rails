@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
-class LineItem < ActiveRecord::Base
+require 'models/application_record'
+class LineItem < ApplicationRecord
   belongs_to :invoice, touch: true
   has_many :discount_applications, class_name: "LineItemDiscountApplication"
 end
 
-class LineItemDiscountApplication < ActiveRecord::Base
+require 'models/application_record'
+class LineItemDiscountApplication < ApplicationRecord
   belongs_to :line_item
   belongs_to :discount
 end

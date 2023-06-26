@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Pet < ActiveRecord::Base
+require 'models/application_record'
+class Pet < ApplicationRecord
   attr_accessor :current_user
 
   self.primary_key = :pet_id

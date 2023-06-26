@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Sharded
-  class BlogPost < ActiveRecord::Base
+require 'models/application_record'
+  class BlogPost < ApplicationRecord
     self.table_name = :sharded_blog_posts
     query_constraints :blog_id, :id
 

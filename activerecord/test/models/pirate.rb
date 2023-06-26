@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Pirate < ActiveRecord::Base
+require 'models/application_record'
+class Pirate < ApplicationRecord
   belongs_to :parrot, validate: true
   belongs_to :non_validated_parrot, class_name: "Parrot"
   has_and_belongs_to_many :parrots, -> { order("parrots.id ASC") }, validate: true
@@ -96,13 +97,15 @@ class DestructivePirate < Pirate
   has_one :dependent_ship, class_name: "Ship", foreign_key: :pirate_id, dependent: :destroy
 end
 
-class FamousPirate < ActiveRecord::Base
+require 'models/application_record'
+class FamousPirate < ApplicationRecord
   self.table_name = "pirates"
   has_many :famous_ships, inverse_of: :famous_pirate
   validates_presence_of :catchphrase, on: :conference
 end
 
-class SpacePirate < ActiveRecord::Base
+require 'models/application_record'
+class SpacePirate < ApplicationRecord
   self.table_name = "pirates"
 
   belongs_to :parrot

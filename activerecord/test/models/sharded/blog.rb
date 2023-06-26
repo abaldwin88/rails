@@ -6,7 +6,8 @@
 # which serves as a sharding key allows presumed sharding implementation to route the query to a correct shard.
 
 module Sharded
-  class Blog < ActiveRecord::Base
+require 'models/application_record'
+  class Blog < ApplicationRecord
     self.table_name = :sharded_blogs
   end
 end

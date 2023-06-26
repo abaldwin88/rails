@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Cpk
-  class OrderTag < ActiveRecord::Base
+require 'models/application_record'
+  class OrderTag < ApplicationRecord
     self.table_name = :cpk_order_tags
 
     belongs_to :tag

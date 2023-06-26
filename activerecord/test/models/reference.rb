@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Reference < ActiveRecord::Base
+require 'models/application_record'
+class Reference < ApplicationRecord
   belongs_to :person
   belongs_to :job
 
@@ -19,7 +20,8 @@ class Reference < ActiveRecord::Base
   end
 end
 
-class BadReference < ActiveRecord::Base
+require 'models/application_record'
+class BadReference < ApplicationRecord
   self.table_name = "references"
   default_scope { where(favorite: false) }
 end

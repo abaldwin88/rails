@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Cat < ActiveRecord::Base
+require 'models/application_record'
+class Cat < ApplicationRecord
   self.abstract_class = true
 
   enum gender: [:female, :male]

@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Face < ActiveRecord::Base
+require 'models/application_record'
+class Face < ApplicationRecord
   belongs_to :human, inverse_of: :face
   belongs_to :autosave_human, class_name: "Human", foreign_key: :human_id, inverse_of: :autosave_face
   belongs_to :super_human, polymorphic: true

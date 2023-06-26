@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class AbstractDoubloon < ActiveRecord::Base
+require 'models/application_record'
+class AbstractDoubloon < ApplicationRecord
   # This has functionality that might be shared by multiple classes.
 
   self.abstract_class = true

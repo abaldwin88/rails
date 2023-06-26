@@ -1,4 +1,5 @@
 # frozen_string_literal: true
 
-class Carrier < ActiveRecord::Base
+require 'models/application_record'
+class Carrier < ApplicationRecord
 end

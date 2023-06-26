@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class NumericData < ActiveRecord::Base
+require 'models/application_record'
+class NumericData < ApplicationRecord
   self.table_name = "numeric_data"
   # Decimal columns with 0 scale being automatically treated as integers
   # is deprecated, and will be removed in a future version of Rails.

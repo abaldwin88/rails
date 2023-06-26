@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Cpk
-  class Book < ActiveRecord::Base
+require 'models/application_record'
+  class Book < ApplicationRecord
     self.table_name = :cpk_books
 
     belongs_to :order, autosave: true, query_constraints: [:shop_id, :order_id]

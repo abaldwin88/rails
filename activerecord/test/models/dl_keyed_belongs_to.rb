@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class DlKeyedBelongsTo < ActiveRecord::Base
+require 'models/application_record'
+class DlKeyedBelongsTo < ApplicationRecord
   self.primary_key = "belongs_key"
   belongs_to :destroy_async_parent,
     dependent: :destroy_async,

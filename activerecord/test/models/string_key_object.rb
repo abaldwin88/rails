@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class StringKeyObject < ActiveRecord::Base
+require 'models/application_record'
+class StringKeyObject < ApplicationRecord
   self.primary_key = :id
 end

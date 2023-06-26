@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Project < ActiveRecord::Base
+require 'models/application_record'
+class Project < ApplicationRecord
   belongs_to :mentor
   has_and_belongs_to_many :developers, -> { distinct.order "developers.name desc, developers.id desc" }
   has_and_belongs_to_many :readonly_developers, -> { readonly }, class_name: "Developer"

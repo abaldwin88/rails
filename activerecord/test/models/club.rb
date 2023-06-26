@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Club < ActiveRecord::Base
+require 'models/application_record'
+class Club < ApplicationRecord
   has_one :membership, touch: true
   has_many :memberships, inverse_of: false
   has_many :members, through: :memberships
@@ -23,7 +24,8 @@ class Club < ActiveRecord::Base
     end
 end
 
-class SuperClub < ActiveRecord::Base
+require 'models/application_record'
+class SuperClub < ApplicationRecord
   self.table_name = "clubs"
 
   has_many :memberships, class_name: "SuperMembership", foreign_key: "club_id"

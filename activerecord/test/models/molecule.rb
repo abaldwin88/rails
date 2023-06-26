@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Molecule < ActiveRecord::Base
+require 'models/application_record'
+class Molecule < ApplicationRecord
   belongs_to :liquid
   has_many :electrons
 

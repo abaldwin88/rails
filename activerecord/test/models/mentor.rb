@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-class Mentor < ActiveRecord::Base
+require 'models/application_record'
+class Mentor < ApplicationRecord
   has_many :developers
 end

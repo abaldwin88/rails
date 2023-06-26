@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class PetTreasure < ActiveRecord::Base
+require 'models/application_record'
+class PetTreasure < ApplicationRecord
   self.table_name = "pets_treasures"
 
   belongs_to :pet

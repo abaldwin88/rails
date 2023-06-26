@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ShipPart < ActiveRecord::Base
+require 'models/application_record'
+class ShipPart < ApplicationRecord
   belongs_to :ship
   has_many :trinkets, class_name: "Treasure", as: :looter
   accepts_nested_attributes_for :trinkets, allow_destroy: true

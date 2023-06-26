@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Hardback < ActiveRecord::Base
+require 'models/application_record'
+class Hardback < ApplicationRecord
 end
 
 class BestHardback < Hardback
