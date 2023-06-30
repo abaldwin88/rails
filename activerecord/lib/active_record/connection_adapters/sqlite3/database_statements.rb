@@ -51,7 +51,7 @@ module ActiveRecord
                 records = stmt.to_a
               end
 
-              build_result(columns: cols, rows: records)
+              build_result(columns: cols, rows: records, affected_rows: @raw_connection.changes)
             end
           end
         end
@@ -60,7 +60,6 @@ module ActiveRecord
           internal_exec_query(sql, name, binds)
           @raw_connection.changes
         end
-        alias :exec_update :exec_delete
 
         def begin_isolated_db_transaction(isolation) # :nodoc:
           raise TransactionIsolationError, "SQLite3 only supports the `read_uncommitted` transaction isolation level" if isolation != :read_uncommitted

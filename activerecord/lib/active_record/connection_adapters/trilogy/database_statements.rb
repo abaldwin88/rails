@@ -38,7 +38,14 @@ module ActiveRecord
           result.affected_rows
         end
 
-        alias :exec_update :exec_delete # :nodoc:
+        def exec_update(sql, name = nil, binds = [], _returning = nil) # :nodoc:
+          sql = transform_query(sql)
+          check_if_write_query(sql)
+          mark_transaction_written_if_write(sql)
+
+          result = raw_execute(to_sql(sql, binds), name)
+          build_result(columns: [], rows: [], affected_rows: result.affected_rows)
+        end
 
         private
           def raw_execute(sql, name, async: false, allow_retry: false, materialize_transactions: true)

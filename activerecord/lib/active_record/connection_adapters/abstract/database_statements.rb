@@ -163,7 +163,8 @@ module ActiveRecord
       # Executes update +sql+ statement in the context of this connection using
       # +binds+ as the bind substitutes. +name+ is logged along with
       # the executed +sql+ statement.
-      def exec_update(sql, name = nil, binds = [])
+      def exec_update(sql, name = nil, binds = [], returning = nil)
+        sql, binds = sql_for_update(sql, binds, returning)
         internal_exec_query(sql, name, binds)
       end
 
@@ -195,9 +196,9 @@ module ActiveRecord
       alias create insert
 
       # Executes the update statement and returns the number of rows affected.
-      def update(arel, name = nil, binds = [])
+      def update(arel, name = nil, binds = [], returning: nil)
         sql, binds = to_sql_and_binds(arel, binds)
-        exec_update(sql, name, binds)
+        exec_update(sql, name, binds, returning)
       end
 
       # Executes the delete statement and returns the number of rows affected.
@@ -634,6 +635,10 @@ module ActiveRecord
         end
 
         def sql_for_insert(sql, _pk, binds, _returning)
+          [sql, binds]
+        end
+
+        def sql_for_update(sql, binds, _returning)
           [sql, binds]
         end
 

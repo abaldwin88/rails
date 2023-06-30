@@ -48,7 +48,24 @@ module ActiveRecord
             exec_stmt_and_free(sql, name, binds) { |stmt| stmt.affected_rows }
           end
         end
-        alias :exec_update :exec_delete
+
+        def exec_update(sql, name = nil, binds = [], _returning = nil) # :nodoc:
+          affected_rows = if without_prepared_statement?(binds)
+            with_raw_connection do |conn|
+              @affected_rows_before_warnings = nil
+              execute_and_free(sql, name) do
+                @affected_rows_before_warnings || conn.affected_rows
+              end
+            end
+          else
+            exec_stmt_and_free(sql, name, binds) do |stmt|
+              stmt.affected_rows
+            end
+          end
+
+          # MYSQL does not support RETURNING so we simply pass empty array
+          build_result(columns: [], rows: [], affected_rows: affected_rows)
+        end
 
         private
           def sync_timezone_changes(raw_connection)

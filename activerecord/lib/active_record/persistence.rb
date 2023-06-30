@@ -591,7 +591,7 @@ module ActiveRecord
         )
       end
 
-      def _update_record(values, constraints) # :nodoc:
+      def _update_record(values, constraints, returning = nil) # :nodoc:
         constraints = constraints.map { |name, value| predicate_builder[name, value] }
 
         default_constraint = build_default_constraint
@@ -605,7 +605,7 @@ module ActiveRecord
         um.set(values.transform_keys { |name| arel_table[name] })
         um.wheres = constraints
 
-        connection.update(um, "#{self} Update")
+        connection.update(um, "#{self} Update", returning: returning)
       end
 
       def _delete_record(constraints) # :nodoc:
@@ -945,12 +945,12 @@ module ActiveRecord
         clear_attribute_change(k)
       end
 
-      affected_rows = self.class._update_record(
+      result = self.class._update_record(
         attributes,
         update_constraints
       )
 
-      affected_rows == 1
+      result.affected_rows == 1
     end
 
     # Initializes +attribute+ to zero if +nil+ and adds the value passed as +by+ (default is 1).
@@ -1208,10 +1208,19 @@ module ActiveRecord
     end
 
     def _update_row(attribute_names, attempted_action = "update")
-      self.class._update_record(
+      returning_columns = self.class._returning_columns_for_update
+
+      result = self.class._update_record(
         attributes_with_values(attribute_names),
-        _query_constraints_hash
+        _query_constraints_hash,
+         returning_columns
       )
+
+      returning_columns.zip(result.rows.first).each do |column, value|
+        _write_attribute(column, value)
+      end if result.rows.first.present?
+
+      result.affected_rows
     end
 
     def create_or_update(**, &block)
