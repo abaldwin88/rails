@@ -4,6 +4,7 @@ require "cases/helper"
 require "models/human"
 require "models/face"
 require "models/interest"
+require "models/skill"
 require "models/zine"
 require "models/club"
 require "models/sponsor"
@@ -690,6 +691,31 @@ class InverseHasManyTests < ActiveRecord::TestCase
     comment.update!(post_id: post2.id)
 
     assert_equal post2, comment.post
+  end
+
+  def test_multiple_has_many_inversing_should_not_violate_not_null_constraint
+    with_has_many_inversing(Skill) do
+      human = Human.new
+      zine = Zine.new
+      human.skills.build(zine: zine)
+      human.skills.build(zine: zine)
+      human.save!
+
+      assert_equal 2, Skill.where(human: human).count
+    end
+  end
+
+  def test_multiple_has_many_inversing_permitting_nulls_should_not_execute_excess_queries
+    with_has_many_inversing(Interest) do
+      human = Human.new
+      zine = Zine.new
+      human.interests.build(zine: zine)
+      human.interests.build(zine: zine)
+
+      assert_queries(4) do
+        human.save!
+      end
+    end
   end
 end
 
