@@ -74,7 +74,7 @@ module ActiveRecord
           execute_and_clear(sql, name, binds) { |result| result.cmd_tuples }
         end
 
-        def exec_update(sql, name = nil, binds = [], returning = nil) # :nodoc:
+        def exec_update(sql, name = nil, binds = [], returning: nil) # :nodoc:
           sql, binds = sql_for_update(sql, binds, returning)
 
           internal_exec_query(sql, name, binds)

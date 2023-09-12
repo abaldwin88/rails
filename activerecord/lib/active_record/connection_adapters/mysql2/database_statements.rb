@@ -49,7 +49,7 @@ module ActiveRecord
           end
         end
 
-        def exec_update(sql, name = nil, binds = [], _returning = nil) # :nodoc:
+        def exec_update(sql, name = nil, binds = [], returning: nil) # :nodoc:
           affected_rows = if without_prepared_statement?(binds)
             with_raw_connection do |conn|
               @affected_rows_before_warnings = nil
