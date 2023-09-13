@@ -38,7 +38,7 @@ module ActiveRecord
           end
         end
 
-        def exec_delete(sql, name = nil, binds = []) # :nodoc:
+        def _exec_statement(sql, name = nil, binds = [], returning: nil)
           if without_prepared_statement?(binds)
             with_raw_connection do |conn|
               @affected_rows_before_warnings = nil
@@ -49,19 +49,10 @@ module ActiveRecord
           end
         end
 
+        alias :exec_delete :_exec_statement
+
         def exec_update(sql, name = nil, binds = [], returning: nil) # :nodoc:
-          affected_rows = if without_prepared_statement?(binds)
-            with_raw_connection do |conn|
-              @affected_rows_before_warnings = nil
-              execute_and_free(sql, name) do
-                @affected_rows_before_warnings || conn.affected_rows
-              end
-            end
-          else
-            exec_stmt_and_free(sql, name, binds) do |stmt|
-              stmt.affected_rows
-            end
-          end
+          affected_rows = _exec_statement(sql, name, binds, returning: returning)
 
           # MYSQL does not support RETURNING so we simply pass empty array
           build_result(columns: [], rows: [], affected_rows: affected_rows)
