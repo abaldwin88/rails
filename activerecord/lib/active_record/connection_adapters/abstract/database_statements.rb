@@ -195,10 +195,12 @@ module ActiveRecord
       end
       alias create insert
 
+      # TODO - ALEX update these docs
       # Executes the update statement and returns the number of rows affected.
       def update(arel, name = nil, binds = [], returning: nil)
         sql, binds = to_sql_and_binds(arel, binds)
-        exec_update(sql, name, binds, returning: returning)
+        result = exec_update(sql, name, binds, returning: returning)
+        returning ? result : result.affected_rows
       end
 
       # Executes the delete statement and returns the number of rows affected.

@@ -399,7 +399,7 @@ class Mysql2AdapterTest < ActiveRecord::Mysql2TestCase
       @conn.execute("INSERT INTO posts (title, body) VALUES('Title', 'Body')")
       result = @conn.update("UPDATE posts SET title = 'Updated' WHERE id > (0+'foo') LIMIT 1")
 
-      assert_equal 1, result.affected_rows
+      assert_equal 1, result
     end
   ensure
     @conn.execute("SET @@SESSION.sql_mode='#{old_sql_mode}'")

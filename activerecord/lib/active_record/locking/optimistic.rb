@@ -106,7 +106,7 @@ module ActiveRecord
             affected_rows = self.class._update_record(
               attributes_with_values(attribute_names),
               update_constraints
-            ).affected_rows
+            )
 
             if affected_rows != 1
               raise ActiveRecord::StaleObjectError.new(self, attempted_action)

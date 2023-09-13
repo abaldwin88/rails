@@ -945,12 +945,12 @@ module ActiveRecord
         clear_attribute_change(k)
       end
 
-      result = self.class._update_record(
+      affected_rows = self.class._update_record(
         attributes,
         update_constraints
       )
 
-      result.affected_rows == 1
+      affected_rows == 1
     end
 
     # Initializes +attribute+ to zero if +nil+ and adds the value passed as +by+ (default is 1).
@@ -1213,7 +1213,7 @@ module ActiveRecord
       result = self.class._update_record(
         attributes_with_values(attribute_names),
         _query_constraints_hash,
-         returning_columns
+        returning_columns
       )
 
       returning_columns.zip(result.rows.first).each do |column, value|
