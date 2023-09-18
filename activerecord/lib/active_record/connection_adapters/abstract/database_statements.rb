@@ -195,12 +195,15 @@ module ActiveRecord
       end
       alias create insert
 
-      # TODO - ALEX update these docs
       # Executes the update statement and returns the number of rows affected.
+      #
+      # Some adapters support the `returning` keyword argument which allows defining the return value of the method:
+      # `nil` is the default value and maintains default behavior. If an array of column names is passed -
+      # ActiveRecord::Result is returned which includes the values of the specified columns from the updated row.
       def update(arel, name = nil, binds = [], returning: nil)
         sql, binds = to_sql_and_binds(arel, binds)
         result = exec_update(sql, name, binds, returning: returning)
-        returning ? result : result.affected_rows
+        returning.nil? ? result.affected_rows : result
       end
 
       # Executes the delete statement and returns the number of rows affected.
