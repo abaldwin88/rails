@@ -29,7 +29,7 @@ module ActiveRecord
           raw_execute(to_sql(sql, binds), name)
         end
 
-        def exec_delete(sql, name = nil, binds = []) # :nodoc:
+        def _exec_statement(sql, name = nil, binds = []) # :nodoc:
           sql = transform_query(sql)
           check_if_write_query(sql)
           mark_transaction_written_if_write(sql)
@@ -37,14 +37,10 @@ module ActiveRecord
           result = raw_execute(to_sql(sql, binds), name)
           result.affected_rows
         end
+        alias :exec_delete :_exec_statement # :nodoc:
 
-        def exec_update(sql, name = nil, binds = [], _returning = nil) # :nodoc:
-          sql = transform_query(sql)
-          check_if_write_query(sql)
-          mark_transaction_written_if_write(sql)
-
-          result = raw_execute(to_sql(sql, binds), name)
-          build_result(columns: [], rows: [], affected_rows: result.affected_rows)
+        def exec_update(sql, name = nil, binds = [], returning: nil) # :nodoc:
+          _exec_statement(sql, name, binds)
         end
 
         private

@@ -51,14 +51,19 @@ module ActiveRecord
                 records = stmt.to_a
               end
 
-              build_result(columns: cols, rows: records, affected_rows: @raw_connection.changes)
+              build_result(columns: cols, rows: records)
             end
           end
         end
 
-        def exec_delete(sql, name = "SQL", binds = []) # :nodoc:
+        def _exec_statement(sql, name = "SQL", binds = []) # :nodoc:
           internal_exec_query(sql, name, binds)
           @raw_connection.changes
+        end
+        alias :exec_delete :_exec_statement
+
+        def exec_update(sql, name = "SQL", binds = [], returning: nil) # :nodoc:
+          _exec_statement(sql, name, binds)
         end
 
         def begin_isolated_db_transaction(isolation) # :nodoc:

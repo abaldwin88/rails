@@ -198,12 +198,17 @@ module ActiveRecord
       # Executes the update statement and returns the number of rows affected.
       #
       # Some adapters support the `returning` keyword argument which allows defining the return value of the method:
-      # `nil` is the default value and maintains default behavior. If an array of column names is passed -
-      # ActiveRecord::Result is returned which includes the values of the specified columns from the updated row.
+      # `nil` is the default value and maintains default behavior. If an array of column names is passed and the
+      # adapter supports it then ActiveRecord::Result is returned which includes the values of the specified columns from the updated row.
       def update(arel, name = nil, binds = [], returning: nil)
         sql, binds = to_sql_and_binds(arel, binds)
         result = exec_update(sql, name, binds, returning: returning)
-        returning.nil? ? result.affected_rows : result
+
+        if result.is_a?(ActiveRecord::Result) && returning.nil?
+          result.affected_rows
+        else
+          result
+        end
       end
 
       # Executes the delete statement and returns the number of rows affected.

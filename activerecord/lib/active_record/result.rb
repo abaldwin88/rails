@@ -36,7 +36,8 @@ module ActiveRecord
   class Result
     include Enumerable
 
-    attr_reader :columns, :rows, :column_types, :affected_rows
+    attr_reader :columns, :rows, :column_types
+    attr_reader :affected_rows # :nodoc:
 
     def self.empty(async: false) # :nodoc:
       if async

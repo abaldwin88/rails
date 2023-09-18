@@ -1216,6 +1216,8 @@ module ActiveRecord
         returning_columns
       )
 
+      return result if result.is_a?(Integer)
+
       returning_columns.zip(result.rows.first).each do |column, value|
         _write_attribute(column, value)
       end if result.rows.first.present?
