@@ -1220,7 +1220,7 @@ module ActiveRecord
 
       returning_columns.zip(result.rows.first).each do |column, value|
         _write_attribute(column, value)
-      end if result.rows.first.present?
+      end
 
       result.affected_rows
     end
