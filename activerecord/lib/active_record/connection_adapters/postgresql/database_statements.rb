@@ -96,13 +96,11 @@ module ActiveRecord
         end
         private :sql_for_insert
 
-        def sql_for_update(sql, binds, returning) # :nodoc:
-          return super unless returning
-
-          returning_columns = returning
+        def sql_for_update(sql, binds, returning_columns) # :nodoc:
+          return super unless returning_columns&.any?
 
           returning_columns_statement = returning_columns.map { |c| quote_column_name(c) }.join(", ")
-          sql = "#{sql} RETURNING #{returning_columns_statement}" if returning_columns.any?
+          sql = "#{sql} RETURNING #{returning_columns_statement}"
 
           super
         end
