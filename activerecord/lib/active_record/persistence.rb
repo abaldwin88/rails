@@ -1263,6 +1263,8 @@ module ActiveRecord
       )
 
       returning_columns.zip(returning_values).each do |column, value|
+        # Alternative fix
+        # value = @attributes[column].type_cast(value) if @attributes[column].type.is_a? Type::Json
         _write_attribute(column, value) if !_read_attribute(column)
       end if returning_values
 

@@ -41,6 +41,7 @@ ActiveRecord::Schema.define do
     t.string :char2, limit: 50, default: "a varchar field"
     t.text :char3, default: "a text field"
     t.bigint :bigint_default, default: -> { "0::bigint" }
+    t.jsonb :default_metadata, null: false, default: -> { "jsonb_build_object('foo', 'bar')" }
     t.text :multiline_default, default: "--- []
 
 "

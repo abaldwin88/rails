@@ -57,6 +57,8 @@ class PersistenceTest < ActiveRecord::TestCase
       end
 
       assert_not_nil record.random_number
+      assert_equal({"foo"=>"bar"}, record.default_metadata)
+
       assert_not_nil record.modified_date
       assert_not_nil record.modified_date_function
       assert_not_nil record.modified_time

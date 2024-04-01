@@ -5,13 +5,17 @@ module ActiveRecord
     class Json < ActiveModel::Type::Value
       include ActiveModel::Type::Helpers::Mutable
 
+      def cast(value)
+        super deserialize(value)
+      end
+
       def type
         :json
       end
 
       def deserialize(value)
         return value unless value.is_a?(::String)
-        ActiveSupport::JSON.decode(value) rescue nil
+        ActiveSupport::JSON.decode(value) rescue value
       end
 
       def serialize(value)
