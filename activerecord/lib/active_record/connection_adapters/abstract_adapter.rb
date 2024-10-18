@@ -537,6 +537,10 @@ module ActiveRecord
         false
       end
 
+      def supports_update_returning?
+        false
+      end
+
       def supports_insert_on_duplicate_skip?
         false
       end
@@ -558,7 +562,11 @@ module ActiveRecord
       end
 
       def return_value_after_insert?(column) # :nodoc:
-        column.auto_populated?
+        column.auto_populated_on_insert?
+      end
+
+      def return_value_after_update?(column)
+        column.auto_populated_on_update?
       end
 
       def async_enabled? # :nodoc:
@@ -1182,14 +1190,6 @@ module ActiveRecord
         end
 
         def build_statement_pool
-        end
-
-        # Builds the result object.
-        #
-        # This is an internal hook to make possible connection adapters to build
-        # custom result objects with connection-specific data.
-        def build_result(columns:, rows:, column_types: nil)
-          ActiveRecord::Result.new(columns, rows, column_types)
         end
 
         # Perform any necessary initialization upon the newly-established
